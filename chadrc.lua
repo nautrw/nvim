@@ -1,8 +1,6 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = { theme = 'oxocarbon' }
-
 -- Options
 local opt = vim.opt
 opt.expandtab = true
@@ -17,6 +15,7 @@ M.mappings = require('custom.mappings')
 
 -- Ui
 M.ui = {
+    theme = 'rosepine',
     statusline = {
         theme = 'vscode_colored',
     },
