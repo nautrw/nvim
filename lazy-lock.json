@@ -9,5 +9,6 @@
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "4795812635c7b90cec41637314862b0a229d2b24" },
   "nvim-ts-autotag": { "branch": "main", "commit": "8515e48a277a2f4947d91004d9aa92c29fdc5e18" },
   "vim": { "branch": "main", "commit": "95f92adee0e5ad36f74fe04266554ac9c03e3fc3" },
-  "vim-startuptime": { "branch": "master", "commit": "454b3de856b7bd298700de33d79774ca9b9e3875" }
+  "vim-startuptime": { "branch": "master", "commit": "454b3de856b7bd298700de33d79774ca9b9e3875" },
+  "vscode.nvim": { "branch": "main", "commit": "39841d05ab4a5c03ea0985196b9f3dfa48d83411" }
 }
