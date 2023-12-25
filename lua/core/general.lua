@@ -20,7 +20,7 @@ opt.softtabstop = 4
 opt.expandtab = true
 
 opt.termguicolors = true
-local current_colorscheme = 'vscode' -- Set colorscheme here
+local current_colorscheme = 'noctis_bordo' -- Set colorscheme here
 
 opt.swapfile = false
 opt.undofile = true
@@ -30,6 +30,8 @@ opt.clipboard = 'unnamedplus'
 -- Go to previous/next line with h, j, or arrow keys
 -- if cursor is at the end or beginning of line
 opt.whichwrap:append "<>[]hl"
+
+vim.opt.laststatus = 2
 
 -- This is a hideous hack to be able to set the colorscheme here
 return current_colorscheme

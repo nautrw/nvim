@@ -1,9 +1,7 @@
-return {
-    'nvim-lualine/lualine.nvim',
-    requires = {
-        'nvim-tree/nvim-web-devicons',
-        opt = true,
-    },
+return { 'nvim-lualine/lualine.nvim', requires = {
+    'nvim-tree/nvim-web-devicons',
+    opt = true,
+},
     config = function()
         require('lualine').setup({
             options = {
@@ -38,16 +36,15 @@ return {
                             error = " ",
                             warn = " ",
                             info = " ",
-                            hint = " ",
-                        },
-                    },
-                },
+                            hint = "󰌶 ",
+                        }
+                    }},
 
-                -- Right
-                lualine_x = {'location'},
-                lualine_y = {'encoding', 'fileformat'},
-                lualine_z = {'filetype'},
-            }
-        })
+                    -- Right
+                    lualine_x = {'location'},
+                    lualine_y = {'encoding', 'fileformat'},
+                    lualine_z = {'filetype'},
+               }
+            })
     end
 }
