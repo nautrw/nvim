@@ -20,7 +20,7 @@ opt.softtabstop = 4
 opt.expandtab = true
 
 opt.termguicolors = true
-local current_colorscheme = 'noctis_bordo' -- Set colorscheme here
+local current_colorscheme = 'gruvbox-baby' -- Set colorscheme here
 
 opt.swapfile = false
 opt.undofile = true
