@@ -4,6 +4,7 @@ return {
 	config = function()
 		require('ibl').setup({
 			scope = { enabled = false },
+            exclude = { filetypes = {'terminal', 'dashboard'} } 
 		})
 	end
 }
