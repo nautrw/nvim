@@ -6,6 +6,7 @@ local plugins = {
                 'pyright',
                 'mypy',
                 'ruff',
+                'black'
             }
         }
     },
