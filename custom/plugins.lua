@@ -18,11 +18,11 @@ local plugins = {
         end,
     },
     {
-        'nvimtools/none-ls.nvim', -- Replacement for null-ls
-        ft = { 'python' },
+        'stevearc/conform.nvim',
+        ft = {'python'},
         config = function()
-            return require('custom.configs.null-ls')
-        end,
+            require('custom.configs.conform')
+        end
     },
     {
         'nvim-treesitter/nvim-treesitter',
