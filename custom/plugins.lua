@@ -25,6 +25,13 @@ local plugins = {
         end
     },
     {
+        'mfussenegger/nvim-lint',
+        ft = {'python'},
+        config = function()
+            require('custom.configs.nvim-lint')
+        end,
+    },
+    {
         'nvim-treesitter/nvim-treesitter',
         opts = {
             ensure_installed = {
