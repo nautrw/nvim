@@ -1,5 +1,6 @@
-require('lint').linters_by_ft = {
-    python = {'mypy', 'ruff'}
+require("lint").linters_by_ft = {
+  python = { "mypy", "ruff" },
+  lua = { "selene" },
 }
 
 -- The following is so that it will triggers
