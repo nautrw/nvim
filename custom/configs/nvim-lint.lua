@@ -1,6 +1,6 @@
 require("lint").linters_by_ft = {
-  python = { "mypy", "ruff" },
-  lua = { "selene" },
+	python = { "mypy", "ruff" },
+	lua = { "selene" },
 }
 
 -- The following is so that it will triggers
@@ -9,7 +9,7 @@ require("lint").linters_by_ft = {
 -- some linters require writing to disk rather
 -- than just stdin output.
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-  callback = function()
-    require("lint").try_lint()
-  end,
+	callback = function()
+		require("lint").try_lint()
+	end,
 })
