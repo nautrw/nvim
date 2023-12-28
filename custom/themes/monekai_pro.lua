@@ -5,7 +5,7 @@ M.base_30 = {
   darker_black = "#221f22", -- Filetree background
   black = "#2d2a2e", -- background
   black2 = "#19181a", -- selected file in filetree
-  one_bg = "#2d2c23", -- background 
+  one_bg = "#2d2c23", -- background
   one_bg2 = "#2e2a2e", -- Scope background? Ex: "M.base_39 =" at top
   one_bg3 = "#221f22", -- Mode background
   grey = "#727072", -- line numbers
@@ -54,16 +54,16 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-    ['@operator'] = { fg = '#ff6188' },
-    ['@constructor'] = { fg = '#ff6188' },
-    ['@parameter'] = { fg = '#fc9867' },
-    ['@punctuation.delimiter'] = { fg = '#fcfcfa' },
-    ['@keyword'] = { fg = '#78dce8' },
-    ['@keyword.function'] = { fg = '#78dce8' },
-    ['@function'] = { fg = '#a9dc76' },
-    ['@constructor.python'] = { fg = '#a9dc76' },
-    ['@variable.builtin'] = { fg = '#727072' },
-    ['@punctuation.bracket'] = { fg = '#ff6188' },
+  ["@operator"] = { fg = "#ff6188" },
+  ["@constructor"] = { fg = "#ff6188" },
+  ["@parameter"] = { fg = "#fc9867" },
+  ["@punctuation.delimiter"] = { fg = "#fcfcfa" },
+  ["@keyword"] = { fg = "#78dce8" },
+  ["@keyword.function"] = { fg = "#78dce8" },
+  ["@function"] = { fg = "#a9dc76" },
+  ["@constructor.python"] = { fg = "#a9dc76" },
+  ["@variable.builtin"] = { fg = "#727072" },
+  ["@punctuation.bracket"] = { fg = "#ff6188" },
 }
 
 M.type = "dark"
