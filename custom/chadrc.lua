@@ -3,7 +3,7 @@
 local M = {}
 
 M.ui = {
-    theme = 'rosepine',
+    theme = 'monekai_pro',
     tabufline = {
         enabled = false,
         lazyload = false,
