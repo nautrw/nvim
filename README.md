@@ -14,4 +14,5 @@ This configuration was made to be usable. I wanted something nice, while also be
 > It translates to "Further Beyond."
 > I am not a fan of *My Hero Academia*.
 > I just like the phrase.
+
 ![dashboard](https://github.com/nautrw/nvim/blob/main/assets/dashboard.png?raw=true)
