@@ -1,6 +1,8 @@
 require("lint").linters_by_ft = {
 	python = { "mypy", "ruff" },
 	lua = { "selene" },
+	c = { "cpplint" },
+	cpp = { "cpplint" },
 }
 
 -- The following is so that it will triggers

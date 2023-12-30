@@ -12,6 +12,10 @@ local plugins = {
 				-- Lua
 				"selene",
 				"stylua",
+				-- C/C++
+				"clang-format",
+				"clangd",
+				"cpplint",
 			},
 		},
 	},
@@ -24,14 +28,14 @@ local plugins = {
 	},
 	{
 		"stevearc/conform.nvim",
-		ft = { "python", "lua" },
+		ft = { "python", "lua", "c", "cpp" },
 		config = function()
 			require("custom.configs.conform")
 		end,
 	},
 	{
 		"mfussenegger/nvim-lint",
-		ft = { "python", "lua" },
+		ft = { "python", "lua", "c", "cpp" },
 		config = function()
 			require("custom.configs.nvim-lint")
 		end,
@@ -55,6 +59,8 @@ local plugins = {
 				"dockerfile",
 				"gitignore",
 				"python",
+				"c",
+				"cpp",
 			},
 		},
 	},

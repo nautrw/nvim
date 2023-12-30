@@ -6,6 +6,8 @@ require("conform").setup({
 	formatters_by_ft = {
 		python = { "blue", "isort" },
 		lua = { "stylua" },
+		c = { "clang_format" },
+		cpp = { "clang_format" },
 	},
 })
 

@@ -3,7 +3,7 @@ local lspconfig = require("lspconfig")
 local on_attach = config.on_attach
 local capabilities = config.capabilities
 
-local servers = { "pyright" }
+local servers = { "pyright", "clangd" }
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
