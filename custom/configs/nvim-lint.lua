@@ -4,6 +4,7 @@ require("lint").linters_by_ft = {
 	c = { "cpplint" },
 	cpp = { "cpplint" },
 	javascript = { "eslint_d" },
+	sql = { "sqlfluff" },
 }
 
 -- The following is so that it will triggers

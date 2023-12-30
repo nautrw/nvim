@@ -11,6 +11,7 @@ require("conform").setup({
 		javascript = { "prettierd" },
 		css = { "prettier" },
 		html = { "prettier" },
+		sql = { "sql_formatter" },
 	},
 })
 

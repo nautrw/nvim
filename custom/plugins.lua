@@ -22,6 +22,10 @@ local plugins = {
 				"html-lsp",
 				"css-lsp",
 				"prettierd",
+				-- SQL
+				"sqls",
+				"sqlfluff",
+				"sql-formatter",
 			},
 		},
 	},
@@ -34,14 +38,14 @@ local plugins = {
 	},
 	{
 		"stevearc/conform.nvim",
-		ft = { "python", "lua", "c", "cpp", "html", "css", "javascript" },
+		ft = { "python", "lua", "c", "cpp", "html", "css", "javascript", "sql" },
 		config = function()
 			require("custom.configs.conform")
 		end,
 	},
 	{
 		"mfussenegger/nvim-lint",
-		ft = { "python", "lua", "c", "cpp", "html", "css", "javascript" },
+		ft = { "python", "lua", "c", "cpp", "html", "css", "javascript", "sql" },
 		config = function()
 			require("custom.configs.nvim-lint")
 		end,
