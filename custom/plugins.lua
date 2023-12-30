@@ -16,6 +16,12 @@ local plugins = {
 				"clang-format",
 				"clangd",
 				"cpplint",
+				-- JS/CSS/HTML
+				"eslint-lsp",
+				"typescript-language-server",
+				"html-lsp",
+				"css-lsp",
+				"prettierd",
 			},
 		},
 	},
@@ -28,14 +34,14 @@ local plugins = {
 	},
 	{
 		"stevearc/conform.nvim",
-		ft = { "python", "lua", "c", "cpp" },
+		ft = { "python", "lua", "c", "cpp", "html", "css", "javascript" },
 		config = function()
 			require("custom.configs.conform")
 		end,
 	},
 	{
 		"mfussenegger/nvim-lint",
-		ft = { "python", "lua", "c", "cpp" },
+		ft = { "python", "lua", "c", "cpp", "html", "css", "javascript" },
 		config = function()
 			require("custom.configs.nvim-lint")
 		end,

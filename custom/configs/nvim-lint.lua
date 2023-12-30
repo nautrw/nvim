@@ -3,6 +3,7 @@ require("lint").linters_by_ft = {
 	lua = { "selene" },
 	c = { "cpplint" },
 	cpp = { "cpplint" },
+	javascript = { "eslint_d" },
 }
 
 -- The following is so that it will triggers

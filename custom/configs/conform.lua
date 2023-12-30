@@ -8,6 +8,9 @@ require("conform").setup({
 		lua = { "stylua" },
 		c = { "clang_format" },
 		cpp = { "clang_format" },
+		javascript = { "prettierd" },
+		css = { "prettier" },
+		html = { "prettier" },
 	},
 })
 
