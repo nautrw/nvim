@@ -3,7 +3,7 @@
 local M = {}
 
 M.ui = {
-	theme = "monekai_pro",
+	theme = "vscode_dark",
 	tabufline = {
 		enabled = false,
 		lazyload = false,
