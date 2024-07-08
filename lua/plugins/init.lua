@@ -35,4 +35,13 @@ return {
             require "configs.nvim-lint"
         end,
     },
+    {
+        "neovim/nvim-lspconfig",
+        dependencies = "pmizio/typescript-tools.nvim",
+
+        config = function()
+            require("nvchad.configs.lspconfig").defaults()
+            require "configs.lspconfig"
+        end,
+    },
 }

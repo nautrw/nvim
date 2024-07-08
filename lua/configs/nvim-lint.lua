@@ -1,3 +1,4 @@
--- require("lint").linters_by_ft = {
---    lua = { "selene" },
--- }
+require("lint").linters_by_ft = {
+    lua = { "selene" },
+    python = { "ruff" },
+}
