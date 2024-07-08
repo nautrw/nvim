@@ -29,4 +29,10 @@ return {
             },
         },
     },
+    {
+        "mfussenegger/nvim-lint",
+        config = function()
+            require "configs.nvim-lint"
+        end,
+    },
 }
