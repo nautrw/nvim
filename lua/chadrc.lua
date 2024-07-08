@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-    theme = "gruvbox",
+    theme = "flexoki",
     nvdash = {
         load_on_startup = true,
         header = {
