@@ -5,12 +5,13 @@
 local M = {}
 
 M.ui = {
-    theme = "flexoki",
-  
-  -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
-  -- },
+    theme = "gruvbox",
+    nvdash = {
+        load_on_startup = true,
+        header = {
+            [[ El corazón tranquilo da vida al cuerpo. [✝] Proverbios 14:30 ]]
+        },
+    }
 }
 
 return M
