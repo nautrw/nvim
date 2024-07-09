@@ -19,52 +19,38 @@ M.ui = {
             "file",
             "git",
             "%=",
-            "formatters_and_linters",
             "lsp_msg",
             "%=",
             "diagnostics",
             "lsp",
+            "formatters",
+            "linters",
             "cursor",
             "cwd",
         },
         modules = {
-            formatters_and_linters = function()
+            formatters = function()
                 local clients = {}
 
-                local formaters = require("conform").list_formatters(0)
-                for _, formatter in ipairs(formaters) do
+                local formatters = require("conform").list_formatters(0)
+
+                if #formatters == 0 then
+                    return "%#nothing#󱝱 "
+                end
+
+                for _, formatter in ipairs(formatters) do
                     table.insert(clients, formatter.name)
                 end
 
-                local linters = require("lint").get_running(0)
-                if #linters > 0 then
-                    for _, linter in ipairs(linters) do
-                        table.insert(clients, linter)
-                    end
-                end
-
-                return "%#Your_Custom_Highlight#" .. table.concat(clients, ", ")
+                return "%#nothing#󰃣 " .. table.concat(clients, ", ")
             end,
-            -- conform_progress = function()
-            --     local formatters = require("conform").list_formatters()
-
-            --     for k, v in pairs(formatters) do
-            --         print(k)
-            --         print(v)
-            --     end
-            --     return "a"
-            --     --if #formatters == 0 then
-            --     --     return ""
-            --     -- end
-            --     --return "󰃣" .. table.concat(formatters, ", ")
-            -- end,
-            -- lint_progress = function()
-            --     local linters = require("lint").get_running()
-            --     if #linters == 0 then
-            --         return ""
-            --     end
-            --     return "󱉶 " .. table.concat(linters, ", ")
-            -- end,
+            linters = function()
+                local linters = require("lint").get_running()
+                if #linters == 0 then
+                    return " %#nothing# "
+                end
+                return " %#nothing#  " .. table.concat(linters, ", ")
+            end,
         },
     },
     tabufline = {
