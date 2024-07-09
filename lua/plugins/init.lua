@@ -26,7 +26,6 @@ return {
                 "sqlfluff",
                 "sql-formatter",
                 -- HTML/CSS/JavaScript
-                "markuplint",
                 "prettier",
                 "html-lsp",
                 "stylelint",
@@ -46,6 +45,9 @@ return {
                 "c",
                 "cpp",
                 "sql",
+                "javascript",
+                "css",
+                "html",
             },
         },
     },
