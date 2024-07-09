@@ -53,6 +53,7 @@ return {
     },
     {
         "mfussenegger/nvim-lint",
+        lazy = false,
         config = function()
             require "configs.nvim-lint"
         end,
