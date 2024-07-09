@@ -17,6 +17,10 @@ return {
                 -- Python
                 "basedpyright",
                 "ruff",
+                -- C/C++
+                "clangd",
+                "clang-format",
+                "cpplint",
             },
         },
     },
@@ -27,6 +31,8 @@ return {
                 "lua",
                 "vimdoc",
                 "vim",
+                "c",
+                "cpp",
             },
         },
     },
