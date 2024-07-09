@@ -4,4 +4,6 @@ require("lint").linters_by_ft = {
     c = { "cpplint" },
     cpp = { "cpplint" },
     sql = { "sqlfluff" },
+    css = { "stylelint" },
+    js = { "quick-lint-js" },
 }

@@ -5,6 +5,9 @@ local options = {
         c = { "clang-format" },
         cpp = { "clang-format" },
         sql = { "sql_formatter" },
+        css = { "prettier" },
+        js = { "prettier" },
+        html = { "prettier" },
     },
 
     format_on_save = {
