@@ -13,6 +13,7 @@ return {
                 -- Lua
                 "lua-language-server",
                 "stylua",
+                "selene",
                 -- Python
                 "basedpyright",
                 "ruff",
