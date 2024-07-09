@@ -21,6 +21,10 @@ return {
                 "clangd",
                 "clang-format",
                 "cpplint",
+                -- SQL
+                "sqls",
+                "sqlfluff",
+                "sql-formatter",
             },
         },
     },
@@ -33,6 +37,7 @@ return {
                 "vim",
                 "c",
                 "cpp",
+                "sql",
             },
         },
     },

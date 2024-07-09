@@ -3,4 +3,5 @@ require("lint").linters_by_ft = {
     python = { "ruff" },
     c = { "cpplint" },
     cpp = { "cpplint" },
+    sql = { "sqlfluff" },
 }
