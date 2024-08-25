@@ -15,10 +15,16 @@ return {
         opts = {
             ensure_installed = {
                 "vim",
-                "lua",
                 "vimdoc",
+                "lua",
                 "python",
             },
         },
+    },
+    {
+        "norcalli/nvim-colorizer.lua",
+        config = function()
+            require("colorizer").setup()
+        end,
     },
 }

@@ -5,7 +5,10 @@
 local M = {}
 
 M.base46 = {
-    theme = "oxocarbon",
+    theme = "chadracula-evondev",
+    hl_override = {
+        ["@variable"] = { fg = "cyan" },
+    },
 }
 
 M.ui = {

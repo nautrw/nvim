@@ -1,10 +1,16 @@
 require "nvchad.options"
 
-local o = vim.o
-o.cursorlineopt = "both" -- to enable cursorline!
+local opt = vim.opt
 
-o.expandtab = true
-o.shiftwidth = 4
-o.smartindent = true
-o.tabstop = 4
-o.softtabstop = 4
+opt.cursorlineopt = "both" -- to enable cursorline!
+
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.smartindent = true
+opt.tabstop = 4
+opt.softtabstop = 4
+
+vim.opt.showtabline = 0
+
+opt.splitright = true
+opt.splitbelow = true
