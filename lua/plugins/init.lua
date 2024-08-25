@@ -27,4 +27,8 @@ return {
             require("colorizer").setup()
         end,
     },
+    {
+        "kdheepak/lazygit.nvim",
+        lazy = false,
+    },
 }
