@@ -19,3 +19,10 @@ vim.keymap.set("n", "<leader>nk", ":nohl<CR>", { desc = "Clear search highlights
 vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>", { desc = "open lazygit" })
 
 vim.keymap.del("n", "<leader>n")
+
+vim.keymap.set("n", "<LeftDrag>", [[<Cmd>lua require("gesture").draw()<CR>]], { silent = true })
+vim.keymap.set("n", "<LeftRelease>", [[<Cmd>lua require("gesture").finish()<CR>]], { silent = true })
+
+vim.keymap.set("n", "<RightMouse>", [[<Nop>]])
+vim.keymap.set("n", "<RightDrag>", [[<Cmd>lua require("gesture").draw()<CR>]], { silent = true })
+vim.keymap.set("n", "<RightRelease>", [[<Cmd>lua require("gesture").finish()<CR>]], { silent = true })

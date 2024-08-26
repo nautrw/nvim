@@ -31,4 +31,10 @@ return {
         "kdheepak/lazygit.nvim",
         lazy = false,
     },
+    {
+        "notomo/gesture.nvim",
+        config = function()
+            require "configs.gesture"
+        end,
+    },
 }
