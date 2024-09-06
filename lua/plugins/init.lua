@@ -37,4 +37,10 @@ return {
             require "configs.gesture"
         end,
     },
+    {
+        "nvim-tree/nvim-tree.lua",
+        config = function()
+            require "configs.nvim-tree"
+        end,
+    },
 }
