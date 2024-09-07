@@ -22,7 +22,7 @@ M.ui = {
             "Como era en el principio, ahora, y siempre, por ",
             "los siglos de los siglos.",
             "",
-            "────── 🕇 ──────",
+            "────── ✝ ──────",
             "",
             "Glory be to the Father, and to the Son, and to the",
             "Holy Spirit. As it was in the beginning, is now,",
