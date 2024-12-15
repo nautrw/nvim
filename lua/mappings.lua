@@ -1,7 +1,5 @@
 require "nvchad.mappings"
 
--- add yours here
-
 vim.keymap.set("n", ";", ":", { desc = "CMD enter command mode" })
 
 vim.keymap.set("i", "<A-h>", "<Left>", { desc = "move left" })
