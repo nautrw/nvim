@@ -37,4 +37,8 @@ return {
             require "configs.nvim-tree"
         end,
     },
+    {
+        "jbyuki/venn.nvim",
+        lazy = false,
+    },
 }
