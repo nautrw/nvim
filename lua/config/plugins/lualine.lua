@@ -6,7 +6,6 @@ return {
 
         local mode = "mode"
         local filetype = { "filetype", icon_only = true }
-        
         local diagnostics = {
             "diagnostics",
             sources = { "nvim_diagnostic" },

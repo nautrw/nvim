@@ -29,4 +29,6 @@ vim.keymap.set("n", "<A-k>", "<C-w>k", { desc = "Focus window to the up" })
 vim.keymap.set("n", "<Leader>ff", '<cmd>Telescope find_files<cr>', { desc = 'Find files using telescope' })
 vim.keymap.set("n", "<Leader>fg", '<cmd>Telescope live_grep<cr>', {desc = 'Find text using telescope live grep'})
 
+vim.keymap.set("n", "<Leader>wch", "<cmd>WhichKey<cr>", {desc = 'Open WhichKey'})
+
 vim.keymap.set("n", "<leader>nk", ":nohl<CR>", { desc = "Clear search highlights" })
