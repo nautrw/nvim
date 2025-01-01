@@ -31,7 +31,16 @@ vim.keymap.set("n", "<Leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find
 
 vim.keymap.set("n", "<Leader>wch", "<cmd>WhichKey<cr>", { desc = "Open WhichKey" })
 
-local snacks = require "snacks"
-vim.keymap.set("n", "<leader>te", snacks.terminal.get, { desc = "Open terminal" })
+local Terminal = require("toggleterm.terminal").Terminal
+local lazygit = Terminal:new { cmd = "lazygit", direction = "float", hidden = true }
+
+function _lazygit_toggle()
+    lazygit:toggle()
+end
+
+vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>lg", "<cmd>lua _lazygit_toggle()<CR>", { desc = "Open LazyGit inside terminal" })
+vim.keymap.set("n", "<leader>te", "<cmd>ToggleTerm<CR>", { desc = "Open terminal" })
+vim.keymap.set("t", "<C-esc>", "<C-\\><C-N>", { desc = "Exit toggleterm" })
 
 vim.keymap.set("n", "<leader>nk", ":nohl<CR>", { desc = "Clear search highlights" })
