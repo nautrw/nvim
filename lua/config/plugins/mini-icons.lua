@@ -1,7 +1,7 @@
 return {
     "echasnovski/mini.icons",
     opts = {
-        style = 'glyph',
+        style = "glyph",
     },
     lazy = true,
     specs = {

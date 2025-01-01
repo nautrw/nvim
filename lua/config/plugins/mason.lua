@@ -2,7 +2,7 @@ return {
     {
         "williamboman/mason.nvim",
         config = function()
-            require("mason").setup({
+            require("mason").setup {
                 ui = {
                     icons = {
                         package_installed = "✓",
@@ -10,7 +10,7 @@ return {
                         package_uninstalled = "✗",
                     },
                 },
-            })
+            }
         end,
     },
     {
@@ -22,7 +22,7 @@ return {
     {
         "WhoIsSethDaniel/mason-tool-installer.nvim",
         config = function()
-            require("mason-tool-installer").setup({
+            require("mason-tool-installer").setup {
                 ensure_installed = {
                     "lua-language-server",
                     "marksman",
@@ -34,7 +34,7 @@ return {
                     "blue",
                     "stylua",
                 },
-            })
+            }
         end,
     },
 }

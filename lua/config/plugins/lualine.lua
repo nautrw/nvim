@@ -1,8 +1,8 @@
 return {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'echasnovski/mini.icons' },
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "echasnovski/mini.icons" },
     config = function()
-        local lualine = require("lualine")
+        local lualine = require "lualine"
 
         local mode = "mode"
         local filetype = { "filetype", icon_only = true }
@@ -31,7 +31,7 @@ return {
             always_visible = false,
         }
 
-        lualine.setup({
+        lualine.setup {
             options = {
                 theme = "auto",
                 globalstatus = true,
@@ -47,6 +47,6 @@ return {
                 lualine_y = {},
                 lualine_z = {},
             },
-        })
+        }
     end,
 }

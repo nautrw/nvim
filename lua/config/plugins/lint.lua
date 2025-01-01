@@ -1,10 +1,10 @@
 return {
     "mfussenegger/nvim-lint",
     config = function()
-        local lint = require('lint')
+        local lint = require "lint"
 
         lint.linters_by_ft = {
-            python = {"flake8"}
+            python = { "flake8" },
         }
 
         vim.api.nvim_create_autocmd({ "BufWritePost" }, {

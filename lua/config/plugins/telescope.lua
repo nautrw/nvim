@@ -1,17 +1,17 @@
 return {
-    'nvim-telescope/telescope.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim' },
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-        local telescope = require('telescope')
+        local telescope = require "telescope"
 
-        telescope.setup({
+        telescope.setup {
             pickers = {
                 colorscheme = {
-                    enable_preview = true
-                }
-            }
-        })
+                    enable_preview = true,
+                },
+            },
+        }
 
-        telescope.load_extension('themes')
+        telescope.load_extension "themes"
     end,
 }
