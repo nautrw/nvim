@@ -25,7 +25,7 @@ local function switcher()
                     end,
                 })
             end)
-            
+
             actions.move_selection_previous:replace(function()
                 action_set.shift_selection(buffer, -1)
                 vim.cmd("colorscheme " .. action_state.get_selected_entry()[1])
@@ -38,7 +38,7 @@ local function switcher()
             actions.select_default:replace(function()
                 if action_state.get_selected_entry() then
                     vim.cmd("colorscheme " .. action_state.get_selected_entry()[1])
-                    file = io.open("lua/config/persistent_colorscheme.lua", 'w')
+                    file = io.open("lua/config/persistent_colorscheme.lua", "w")
                     file:write("vim.cmd('colorscheme " .. action_state.get_selected_entry()[1] .. "'" .. ")")
                     file:close()
                     actions.close(buffer)

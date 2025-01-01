@@ -1,1 +1,1 @@
-vim.cmd('colorscheme flexoki-moon')
+vim.cmd('colorscheme seoul256')
