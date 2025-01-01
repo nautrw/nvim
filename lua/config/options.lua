@@ -1,4 +1,7 @@
 vim.g.mapleader = " "
+
+vim.opt.clipboard = "unnamedplus"
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -18,5 +21,7 @@ vim.opt.termguicolors = true
 
 vim.opt.undofile = true
 vim.opt.swapfile = false
+
+vim.opt.whichwrap:append "<>[]hl"
 
 vim.opt.mouse = "a"
