@@ -2,10 +2,10 @@ return {
     "stevearc/oil.nvim",
     dependencies = { "echasnovski/mini.icons" },
     config = function()
-        require("oil").setup({
+        require("oil").setup {
             columns = {
                 "icon",
-                "mtime"
+                "mtime",
             },
             delete_to_trash = true,
             skip_confirm_for_simple_edits = true,
@@ -17,7 +17,10 @@ return {
                 win_options = {
                     winblend = 0,
                 },
-            }
-        })
+            },
+            view_options = {
+                show_hidden = true,
+            },
+        }
     end,
 }

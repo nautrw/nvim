@@ -1,6 +1,6 @@
-vim.keymap.set('n', '<Leader>e', '<cmd>Oil --float<CR>', {desc = "Open Oil file manager"})
+vim.keymap.set("n", "<Leader>e", "<cmd>Oil --float<CR>", { desc = "Open Oil file manager" })
 
-vim.keymap.set('n', '<Leader>th', "<cmd>Telescope themes<CR>", {desc = "Open theme selector"})
+vim.keymap.set("n", "<Leader>th", "<cmd>Telescope themes<CR>", { desc = "Open theme selector" })
 
 vim.keymap.set("n", ";", ":", { desc = "Enter command mode" })
 
@@ -26,9 +26,12 @@ vim.keymap.set("n", "<A-l>", "<C-w>l", { desc = "Focus window to the right" })
 vim.keymap.set("n", "<A-j>", "<C-w>j", { desc = "Focus window to the down" })
 vim.keymap.set("n", "<A-k>", "<C-w>k", { desc = "Focus window to the up" })
 
-vim.keymap.set("n", "<Leader>ff", '<cmd>Telescope find_files<cr>', { desc = 'Find files using telescope' })
-vim.keymap.set("n", "<Leader>fg", '<cmd>Telescope live_grep<cr>', {desc = 'Find text using telescope live grep'})
+vim.keymap.set("n", "<Leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files using telescope" })
+vim.keymap.set("n", "<Leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find text using telescope live grep" })
 
-vim.keymap.set("n", "<Leader>wch", "<cmd>WhichKey<cr>", {desc = 'Open WhichKey'})
+vim.keymap.set("n", "<Leader>wch", "<cmd>WhichKey<cr>", { desc = "Open WhichKey" })
+
+local snacks = require "snacks"
+vim.keymap.set("n", "<leader>te", snacks.terminal.get, { desc = "Open terminal" })
 
 vim.keymap.set("n", "<leader>nk", ":nohl<CR>", { desc = "Clear search highlights" })
