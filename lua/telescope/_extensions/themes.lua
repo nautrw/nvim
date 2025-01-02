@@ -38,7 +38,7 @@ local function switcher()
             actions.select_default:replace(function()
                 if action_state.get_selected_entry() then
                     vim.cmd("colorscheme " .. action_state.get_selected_entry()[1])
-                    file = io.open("lua/config/persistent_colorscheme.lua", "w")
+                    local file = io.open(os.getenv "HOME" .. "/.config/nvim/lua/config/persistent_colorscheme.lua", "w")
                     file:write("vim.cmd 'colorscheme " .. action_state.get_selected_entry()[1] .. "'")
                     file:close()
                     actions.close(buffer)
