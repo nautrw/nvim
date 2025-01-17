@@ -1,4 +1,6 @@
 return {
+    "felipeagc/fleet-theme-nvim",
+    "eldritch-theme/eldritch.nvim",
     "diegoulloao/neofusion.nvim",
     "rebelot/kanagawa.nvim",
     "ellisonleao/gruvbox.nvim",
