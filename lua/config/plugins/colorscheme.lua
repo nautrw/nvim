@@ -1,7 +1,9 @@
 return {
     "felipeagc/fleet-theme-nvim",
+    "sainnhe/sonokai",
     "eldritch-theme/eldritch.nvim",
     "diegoulloao/neofusion.nvim",
+    "loctvl842/monokai-pro.nvim",
     "rebelot/kanagawa.nvim",
     "ellisonleao/gruvbox.nvim",
     "luisiacc/gruvbox-baby",
