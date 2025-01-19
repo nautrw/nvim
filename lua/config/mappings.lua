@@ -33,18 +33,12 @@ vim.keymap.set("n", "<Leader>wch", "<cmd>WhichKey<cr>", { desc = "Open WhichKey"
 
 local Terminal = require("toggleterm.terminal").Terminal
 local lazygit = Terminal:new { cmd = "lazygit", direction = "float", hidden = true }
-local lazysql = Terminal:new { cmd = "lazysql", direction = "float", hidden = true }
 
 function _lazygit_toggle()
     lazygit:toggle()
 end
 
-function _lazysql_toggle()
-    lazysql:toggle()
-end
-
 vim.keymap.set("n", "<leader>lg", "<cmd>lua _lazygit_toggle()<CR>", { desc = "Open LazyGit inside terminal" })
-vim.keymap.set("n", "<leader>ls", "<cmd>lua _lazysql_toggle()<CR>", { desc = "Open LazySQL inside terminal" })
 
 vim.keymap.set("n", "<leader>te", "<cmd>ToggleTerm<CR>", { desc = "Open terminal" })
 vim.keymap.set("t", "<C-esc>", "<C-\\><C-N>", { desc = "Exit toggleterm" })
