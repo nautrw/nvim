@@ -16,6 +16,7 @@ return {
     "shaunsingh/nord.nvim",
     "maxmx03/solarized.nvim",
     "nyoom-engineering/oxocarbon.nvim",
+    "datsfilipe/min-theme.nvim",
     { "embark-theme/vim", name = "embark" },
     {
         "Biscuit-Theme/nvim",
