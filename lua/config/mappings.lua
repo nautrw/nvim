@@ -1,6 +1,6 @@
 vim.keymap.set("n", "<Leader>e", "<cmd>Oil --float<CR>", { desc = "Open Oil file manager" })
 
-vim.keymap.set("n", "<Leader>th", "<cmd>Telescope themes<CR>", { desc = "Open theme selector" })
+vim.keymap.set("n", "<Leader>th", "<cmd>Telescope colorscheme_chooser<CR>", { desc = "Open theme selector" })
 
 vim.keymap.set("n", ";", ":", { desc = "Enter command mode" })
 

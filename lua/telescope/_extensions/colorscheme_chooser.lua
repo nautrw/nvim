@@ -52,5 +52,5 @@ local function switcher()
 end
 
 return require("telescope").register_extension {
-    exports = { themes = switcher },
+    exports = { colorscheme_chooser = switcher },
 }
