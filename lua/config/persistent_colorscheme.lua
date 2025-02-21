@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme zenbones'
+vim.cmd 'colorscheme nordbones'

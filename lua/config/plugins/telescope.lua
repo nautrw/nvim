@@ -12,6 +12,6 @@ return {
             },
         }
 
-        telescope.load_extension "themes"
+        telescope.load_extension "colorscheme_chooser"
     end,
 }
