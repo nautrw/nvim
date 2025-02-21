@@ -17,6 +17,8 @@ return {
     "maxmx03/solarized.nvim",
     "nyoom-engineering/oxocarbon.nvim",
     "datsfilipe/min-theme.nvim",
+    "ribru17/bamboo.nvim",
+    "slugbyte/lackluster.nvim",
     { "embark-theme/vim", name = "embark" },
     {
         "Biscuit-Theme/nvim",
@@ -25,5 +27,9 @@ return {
     {
         "rose-pine/neovim",
         name = "rose-pine",
+    },
+    {
+        "zenbones-theme/zenbones.nvim",
+        dependencies = "rktjmp/lush.nvim",
     },
 }
