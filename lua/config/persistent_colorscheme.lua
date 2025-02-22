@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme nordbones'
+vim.cmd 'colorscheme mellifluous'

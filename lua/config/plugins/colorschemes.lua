@@ -19,6 +19,7 @@ return {
     "datsfilipe/min-theme.nvim",
     "ribru17/bamboo.nvim",
     "slugbyte/lackluster.nvim",
+    "ramojus/mellifluous.nvim",
     { "embark-theme/vim", name = "embark" },
     {
         "Biscuit-Theme/nvim",
