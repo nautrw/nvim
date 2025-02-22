@@ -33,6 +33,7 @@ return {
                     "autopep8",
                     "blue",
                     "stylua",
+                    "jdtls",
                 },
             }
         end,

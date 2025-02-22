@@ -68,7 +68,7 @@ return {
         local capabilities = cmp_nvim_lsp.default_capabilities()
 
         -- Default configurations
-        local servers = { "lua_ls", "marksman", "pyright" }
+        local servers = { "lua_ls", "marksman", "pyright", "jdtls" }
 
         for _, lsp in ipairs(servers) do
             lspconfig[lsp].setup {
