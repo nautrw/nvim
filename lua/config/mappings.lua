@@ -44,3 +44,5 @@ vim.keymap.set("n", "<leader>te", "<cmd>ToggleTerm<CR>", { desc = "Open terminal
 vim.keymap.set("t", "<C-esc>", "<C-\\><C-N>", { desc = "Exit toggleterm" })
 
 vim.keymap.set("n", "<leader>nk", ":nohl<CR>", { desc = "Clear search highlights" })
+
+vim.keymap.set("i", "<C-BS>", "<C-o>db", { desc = "Ctrl+Backspace" })
