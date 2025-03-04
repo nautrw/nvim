@@ -43,6 +43,12 @@ return {
                         action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
                     },
                     {
+                        icon = " ",
+                        key = "t",
+                        desc = "Theme Chooser",
+                        action = ":Telescope colorscheme_chooser",
+                    },
+                    {
                         icon = "󰒲 ",
                         key = "L",
                         desc = "Lazy",
