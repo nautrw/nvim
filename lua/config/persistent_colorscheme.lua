@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme lackluster-mint'
+vim.cmd 'colorscheme biscuit'
