@@ -21,7 +21,8 @@ vim.keymap.set("n", "<A-l>", "<C-w>l", { desc = "Focus window to the right" })
 vim.keymap.set("n", "<A-j>", "<C-w>j", { desc = "Focus window to the down" })
 vim.keymap.set("n", "<A-k>", "<C-w>k", { desc = "Focus window to the up" })
 
-oil_actions = require('oil.actions')
+vim.keymap.set('n', '<Leader>e', '<cmd>Oil<CR>', { desc = 'Open Oil file manager' }) -- Oil's mappings are in lua/config/plugins/oil.lua
 
-vim.keymap.set('n', '<Leader>e', '<cmd>Oil<CR>', { desc = 'Open Oil file manager' })
-vim.keymap.set('n', 'g?', oil_actions.show_help, { desc = "Show Oil's help" })
+vim.keymap.set("n", "<leader>nk", ":nohl<CR>", { desc = "Clear search highlights" })
+
+vim.keymap.set("i", "<C-BS>", "<C-o>db", { desc = "Ctrl+Backspace" })
