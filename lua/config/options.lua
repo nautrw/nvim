@@ -25,3 +25,5 @@ vim.opt.swapfile = false
 vim.opt.whichwrap:append "<>[]hl"
 
 vim.opt.mouse = "a"
+
+vim.opt.winborder = "bold"
