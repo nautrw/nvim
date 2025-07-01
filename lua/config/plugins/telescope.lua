@@ -4,7 +4,7 @@ return {
     config = function()
         local telescope = require "telescope"
 
-        telescope.setup()
+        telescope.setup({})
 
         telescope.load_extension('colorscheme_chooser')
     end,
