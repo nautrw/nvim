@@ -36,6 +36,8 @@ local filtered_colors = function()
         "dayfox",
         "dawnfox",
         "unokai",
+        "kanagawa-lotus",
+        "rose-pine-dawn",
     }
 
     local allthemes = vim.fn.getcompletion('colorscheme ', 'cmdline')

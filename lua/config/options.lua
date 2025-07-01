@@ -6,7 +6,7 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-vim.opt.smartindent = true
+vim.opt.smartindent = false -- treesitter will handle it
 
 vim.opt.number = true
 
@@ -25,5 +25,3 @@ vim.opt.swapfile = false
 vim.opt.whichwrap:append "<>[]hl"
 
 vim.opt.mouse = "a"
-
-vim.opt.winborder = "bold"
