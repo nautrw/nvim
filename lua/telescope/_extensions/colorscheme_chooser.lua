@@ -8,6 +8,7 @@ local previewers = require("telescope.previewers")
 
 local filtered_colors = function()
     local ignore_table = {
+        "retrobox",
         "default",
         "vim",
         "sorbet",

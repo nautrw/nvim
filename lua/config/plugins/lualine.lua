@@ -14,6 +14,9 @@ return {
             update_in_insert = false,
             always_visible = false,
         }
+        local filename = {
+            "filename", path = 1
+        }
 
         local diff = {
             "diff",
@@ -41,7 +44,7 @@ return {
             },
             sections = {
                 lualine_a = { mode },
-                lualine_b = { "filename" },
+                lualine_b = { filename },
                 lualine_c = { diff, diagnostics },
                 lualine_x = { filetype },
                 lualine_y = {},
