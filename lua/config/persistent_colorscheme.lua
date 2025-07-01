@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme sunset_cloud'
+vim.cmd 'colorscheme lackluster-dark'
