@@ -13,7 +13,6 @@ return {
             indent = {
                 enable = true,
                 disable = {"python"},
-                additional_vim_regex_highlighting = true,
             }
         }
     end,
