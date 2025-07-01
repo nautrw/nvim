@@ -32,18 +32,18 @@ return {
         }
 
         lualine.setup {
-            options = {
+        options = {
                 theme = "auto",
                 globalstatus = true,
                 section_separators = "",
                 component_separators = "",
-                disabled_filetypes = { statusline = { "dashboard", "lazy", "alpha" } },
+                disabled_filetypes = { statusline = { "snacks_dashboard", "lazy", "alpha" } },
             },
             sections = {
                 lualine_a = { mode },
-                lualine_b = {},
-                lualine_c = { "filename" },
-                lualine_x = { diff, diagnostics, filetype },
+                lualine_b = { "filename" },
+                lualine_c = { diff, diagnostics },
+                lualine_x = { filetype },
                 lualine_y = {},
                 lualine_z = {},
             },
