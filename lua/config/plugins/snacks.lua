@@ -50,6 +50,12 @@ return { 'folke/snacks.nvim', lazy = false,
                 pick = nil,
                 keys = {
                     {
+                        icon = "󰏇",
+                        key = "e",
+                        desc = "Open Oil",
+                        action = ":Oil"
+                    },
+                    {
                         icon = " ",
                         key = "f",
                         desc = "Find File",
