@@ -2,7 +2,7 @@ return {
     {
         "neovim/nvim-lspconfig",
         dependencies = {
-            'saghen/blink.cmp',
+            "saghen/blink.cmp",
             {
                 "folke/lazydev.nvim",
                 opts = {
@@ -13,8 +13,8 @@ return {
             },
         },
         config = function()
-            local capabilities = require('blink.cmp').get_lsp_capabilities()
-            local lspconfig = require('lspconfig')
+            local capabilities = require("blink.cmp").get_lsp_capabilities()
+            local lspconfig = require "lspconfig"
 
             local servers = { "lua_ls", "basedpyright" }
 
@@ -24,5 +24,5 @@ return {
                 }
             end
         end,
-    }
+    },
 }

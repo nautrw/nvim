@@ -12,16 +12,18 @@ header = {
     "Amen.",
 }
 
-header_formatted = table.concat(header, '\n')
-return { 'folke/snacks.nvim', lazy = false,
+header_formatted = table.concat(header, "\n")
+return {
+    "folke/snacks.nvim",
+    lazy = false,
     opts = {
         bigfile = {
             enable = true,
             notify = true,
             size = 1 * 1024 * 1024,
             setup = function(ctx)
-                if vim.fn.exists(":NoMatchParen") ~= 0 then
-                    vim.cmd([[NoMatchParen]])
+                if vim.fn.exists ":NoMatchParen" ~= 0 then
+                    vim.cmd [[NoMatchParen]]
                 end
                 Snacks.util.wo(0, { foldmethod = "manual", statuscolumn = "", conceallevel = 0 })
                 vim.b.minianimate_disable = true
@@ -53,13 +55,13 @@ return { 'folke/snacks.nvim', lazy = false,
                         icon = "󰏇",
                         key = "e",
                         desc = "Open Oil",
-                        action = ":Oil"
+                        action = ":Oil",
                     },
                     {
                         icon = " ",
                         key = "f",
                         desc = "Find File",
-                        action = ":lua Snacks.dashboard.pick('files')"
+                        action = ":lua Snacks.dashboard.pick('files')",
                     },
                     {
                         icon = " ",
@@ -88,7 +90,7 @@ return { 'folke/snacks.nvim', lazy = false,
                     },
                     { icon = " ", key = "q", desc = "Quit", action = ":qa" },
                 },
-            }
-        }
-    }
+            },
+        },
+    },
 }

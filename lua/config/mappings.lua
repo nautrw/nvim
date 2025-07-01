@@ -1,14 +1,14 @@
-local whichkey = require('which-key')
+local whichkey = require "which-key"
 
 -- Mappings groups
-whichkey.add({
-    {"<leader>s", desc = "Split management" },
-    {"<leader>t", desc = "Themes" },
-    {"<leader>f", desc = "Find" },
-    {"<leader>g", desc = "Git"},
-    {"<leader>gh", desc = "Hunks"},
-    {"<leader>gb", desc = "Buffers"}
-})
+whichkey.add {
+    { "<leader>s", desc = "Split management" },
+    { "<leader>t", desc = "Themes" },
+    { "<leader>f", desc = "Find" },
+    { "<leader>g", desc = "Git" },
+    { "<leader>gh", desc = "Hunks" },
+    { "<leader>gb", desc = "Buffers" },
+}
 
 vim.keymap.set("i", "<A-h>", "<Left>", { desc = "Move cursor left" })
 vim.keymap.set("i", "<A-l>", "<Right>", { desc = "Move cursor right" })
@@ -29,7 +29,7 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Focus window to the right" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Focus window to the down" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Focus window to the up" })
 
-vim.keymap.set('n', '<Leader>e', '<cmd>Oil<CR>', { desc = 'Open Oil file manager' }) -- Oil's mappings are in lua/config/plugins/oil.lua
+vim.keymap.set("n", "<Leader>e", "<cmd>Oil<CR>", { desc = "Open Oil file manager" }) -- Oil's mappings are in lua/config/plugins/oil.lua
 
 vim.keymap.set("n", "<leader>c", ":nohl<CR>", { desc = "Clear search highlights" })
 
@@ -39,10 +39,10 @@ vim.keymap.set("n", "<Leader>th", "<cmd>Telescope colorscheme_chooser<CR>", { de
 vim.keymap.set("n", "<Leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files using telescope" })
 vim.keymap.set("n", "<Leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find text using telescope live grep" })
 
-local gitsigns = require('gitsigns')
-vim.keymap.set('n', '<leader>ghs', gitsigns.stage_hunk, { desc = "Stage hunk" })
-vim.keymap.set('n', '<leader>gbs', gitsigns.stage_buffer, { desc = "Stage everything in the buffer" })
-vim.keymap.set('n', '<leader>ghr', gitsigns.reset_hunk, { desc = "Reset hunk" })
-vim.keymap.set('n', '<leader>gbr', gitsigns.reset_buffer, { desc = "Reset everything in the buffer" })
+local gitsigns = require "gitsigns"
+vim.keymap.set("n", "<leader>ghs", gitsigns.stage_hunk, { desc = "Stage hunk" })
+vim.keymap.set("n", "<leader>gbs", gitsigns.stage_buffer, { desc = "Stage everything in the buffer" })
+vim.keymap.set("n", "<leader>ghr", gitsigns.reset_hunk, { desc = "Reset hunk" })
+vim.keymap.set("n", "<leader>gbr", gitsigns.reset_buffer, { desc = "Reset everything in the buffer" })
 
-vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, {desc = "Show diagnostics in a float"})
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostics in a float" })

@@ -1,8 +1,8 @@
 return {
-    'EdenEast/nightfox.nvim',
+    "EdenEast/nightfox.nvim",
     "savq/melange-nvim",
     "AlexvZyl/nordic.nvim",
     "rose-pine/neovim",
     "rebelot/kanagawa.nvim",
-    "Biscuit-Theme/nvim"
+    "Biscuit-Theme/nvim",
 }
