@@ -37,8 +37,7 @@ vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
 local gitsigns = require('gitsigns')
-vim.keymap.set('n', '<leader>hs', gitsigns.stage_hunk)
-vim.keymap.set('n', '<leader>bs', gitsigns.stage_buffer)
-vim.keymap.set('n', '<leader>hr', gitsigns.reset_hunk)
-vim.keymap.set('n', '<leader>br', gitsigns.reset_buffer)
-
+vim.keymap.set('n', '<leader>hs', gitsigns.stage_hunk, { desc = "Stage hunk" })
+vim.keymap.set('n', '<leader>bs', gitsigns.stage_buffer, { desc = "Stage everything in the buffer" })
+vim.keymap.set('n', '<leader>hr', gitsigns.reset_hunk, { desc = "Reset hunk" })
+vim.keymap.set('n', '<leader>br', gitsigns.reset_buffer, { desc = "Reset everything in the buffer" })
