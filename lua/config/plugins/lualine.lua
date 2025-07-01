@@ -15,7 +15,8 @@ return {
             always_visible = false,
         }
         local filename = {
-            "filename", path = 1
+            "filename",
+            path = 1,
         }
 
         local diff = {
@@ -35,7 +36,7 @@ return {
         }
 
         lualine.setup {
-        options = {
+            options = {
                 theme = "auto",
                 globalstatus = true,
                 section_separators = "",

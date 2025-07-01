@@ -3,7 +3,7 @@ return {
     dependencies = { "echasnovski/mini.icons", "refractalize/oil-git-status.nvim" },
     lazy = false,
     config = function()
-        require("oil").setup({
+        require("oil").setup {
             default_file_explorer = true,
             columns = {
                 "type",
@@ -58,7 +58,7 @@ return {
             view_options = {
                 show_hidden = true,
                 is_hidden_file = function(name, bufnr)
-                    local m = name:match("^%.")
+                    local m = name:match "^%."
                     return m ~= nil
                 end,
                 is_always_hidden = function(name, bufnr)
@@ -129,13 +129,11 @@ return {
                     winblend = 0,
                 },
             },
-            ssh = {
-            },
-            keymaps_help = {
-            },
-        })
+            ssh = {},
+            keymaps_help = {},
+        }
 
-        require('oil-git-status').setup({
+        require("oil-git-status").setup {
             show_ignored = true,
             symbols = {
                 index = {
@@ -163,16 +161,16 @@ return {
                     [" "] = " ",
                 },
             },
-        })
+        }
 
         vim.api.nvim_create_autocmd("User", {
             pattern = "OilEnter",
             callback = vim.schedule_wrap(function(args)
-                local oil = require("oil")
+                local oil = require "oil"
                 if vim.api.nvim_get_current_buf() == args.data.buf and oil.get_cursor_entry() then
                     oil.open_preview()
                 end
             end),
         })
-    end
-} 
+    end,
+}

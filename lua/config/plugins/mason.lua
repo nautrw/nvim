@@ -21,6 +21,7 @@ return {
                 "black",
                 "isort",
                 "lua-language-server",
+                "stylua",
             },
         }
 
