@@ -44,3 +44,5 @@ vim.keymap.set('n', '<leader>ghs', gitsigns.stage_hunk, { desc = "Stage hunk" })
 vim.keymap.set('n', '<leader>gbs', gitsigns.stage_buffer, { desc = "Stage everything in the buffer" })
 vim.keymap.set('n', '<leader>ghr', gitsigns.reset_hunk, { desc = "Reset hunk" })
 vim.keymap.set('n', '<leader>gbr', gitsigns.reset_buffer, { desc = "Reset everything in the buffer" })
+
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, {desc = "Show diagnostics in a float"})
