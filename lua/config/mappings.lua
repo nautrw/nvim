@@ -46,3 +46,7 @@ vim.keymap.set("n", "<leader>ghr", gitsigns.reset_hunk, { desc = "Reset hunk" })
 vim.keymap.set("n", "<leader>gbr", gitsigns.reset_buffer, { desc = "Reset everything in the buffer" })
 
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostics in a float" })
+
+-- Technically not mappings but eh
+vim.api.nvim_create_user_command("Sw", "SudaWrite", {})
+vim.api.nvim_create_user_command("Sr", "SudaRead", {})
