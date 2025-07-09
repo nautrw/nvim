@@ -3,12 +3,12 @@ local whichkey = require "which-key"
 -- Mappings groups
 whichkey.add {
     { "<leader>s", desc = "Split management" },
-    { "<leader>t", desc = "Themes" },
+    { "<leader>t", desc = "Themes & Terminals" },
     { "<leader>f", desc = "Find" },
     { "<leader>g", desc = "Git" },
     { "<leader>gh", desc = "Hunks" },
     { "<leader>gb", desc = "Buffers" },
-    { "<leader>d", desc = "Debugger" },
+    { "<leader>d", desc = "Debugging & Diagnostics" },
 }
 
 vim.keymap.set("i", "<A-h>", "<Left>", { desc = "Move cursor left" })
@@ -46,7 +46,7 @@ vim.keymap.set("n", "<leader>gbs", gitsigns.stage_buffer, { desc = "Stage everyt
 vim.keymap.set("n", "<leader>ghr", gitsigns.reset_hunk, { desc = "Reset hunk" })
 vim.keymap.set("n", "<leader>gbr", gitsigns.reset_buffer, { desc = "Reset everything in the buffer" })
 
-vim.keymap.set("n", "<leader>of", vim.diagnostic.open_float, { desc = "Show diagnostics in a float" })
+vim.keymap.set("n", "<leader>df", vim.diagnostic.open_float, { desc = "Show diagnostics in a float" })
 
 local dap = require "dap"
 local quit_dap = function()
