@@ -8,6 +8,7 @@ whichkey.add {
     { "<leader>g", desc = "Git" },
     { "<leader>gh", desc = "Hunks" },
     { "<leader>gb", desc = "Buffers" },
+    { "<leader>d", desc = "Debugger" },
 }
 
 vim.keymap.set("i", "<A-h>", "<Left>", { desc = "Move cursor left" })
@@ -45,7 +46,24 @@ vim.keymap.set("n", "<leader>gbs", gitsigns.stage_buffer, { desc = "Stage everyt
 vim.keymap.set("n", "<leader>ghr", gitsigns.reset_hunk, { desc = "Reset hunk" })
 vim.keymap.set("n", "<leader>gbr", gitsigns.reset_buffer, { desc = "Reset everything in the buffer" })
 
-vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostics in a float" })
+vim.keymap.set("n", "<leader>of", vim.diagnostic.open_float, { desc = "Show diagnostics in a float" })
+
+local dap = require "dap"
+local quit_dap = function()
+    dap.terminate()
+    require("dapui").close()
+    require("nvim-dap-virtual-text").toggle()
+end
+
+vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
+vim.keymap.set("n", "<leader>dc", dap.continue, { desc = "Continue debugging" })
+vim.keymap.set("n", "<leader>di", dap.step_into, { desc = "Step into" })
+vim.keymap.set("n", "<leader>do", dap.step_over, { desc = "Step over" })
+vim.keymap.set("n", "<leader>du", dap.step_out, { desc = "Step out" })
+vim.keymap.set("n", "<leader>dq", quit_dap, { desc = "Quit dap" })
+
+vim.keymap.set("n", "<leader>te", "<cmd>ToggleTerm<CR>", { desc = "Open terminal" })
+vim.keymap.set("t", "<C-esc>", "<C-\\><C-N>", { desc = "Exit toggleterm" })
 
 -- Technically not mappings but eh
 vim.api.nvim_create_user_command("Sw", "SudaWrite", {})
