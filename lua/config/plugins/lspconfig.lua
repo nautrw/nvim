@@ -18,12 +18,6 @@ return {
 
             local servers = { "lua_ls" }
 
-            local on_attach = function(client, bufnr)
-                if client.server_capabilities.inlayHintProvider then
-                    vim.lsp.inlay_hint.enable(true)
-                end
-            end
-
             for _, lsp in ipairs(servers) do
                 lspconfig[lsp].setup {
                     capabilities = capabilities,
@@ -31,18 +25,18 @@ return {
                 }
             end
 
-            lspconfig["basedpyright"].setup {
-                capabilities = capabilities,
-                on_attach = on_attach,
+            vim.lsp.config("basedpyright", {
                 settings = {
-                    basedpyright = {
+                    ["basedpyright"] = {
                         analysis = {
-                            typeCheckingMode = "basic",
+                            typeCheckingMode = "standard",
+                        },
+                        python = {
+                            venvPath = "./.venv",
                         },
                     },
                 },
-            }
-
+            })
             vim.diagnostic.config { update_in_insert = true }
         end,
     },

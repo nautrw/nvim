@@ -52,13 +52,13 @@ return {
                 pick = nil,
                 keys = {
                     {
-                        icon = "󰏇",
+                        icon = "󰖌",
                         key = "e",
                         desc = "Open Oil",
                         action = ":Oil",
                     },
                     {
-                        icon = " ",
+                        icon = "󰱼",
                         key = "f",
                         desc = "Find File",
                         action = ":lua Snacks.dashboard.pick('files')",
