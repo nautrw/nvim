@@ -39,6 +39,8 @@ local filtered_colors = function()
         "unokai",
         "kanagawa-lotus",
         "rose-pine-dawn",
+        "minischeme",
+        "minicyan",
     }
 
     local allthemes = vim.fn.getcompletion("colorscheme ", "cmdline")
@@ -57,7 +59,6 @@ return require("telescope").register_extension {
     exports = {
         colorscheme_chooser = function()
             local buffer = vim.api.nvim_get_current_buf()
-
             pickers
                 .new({
                     prompt_title = "Set Theme",
@@ -73,7 +74,6 @@ return require("telescope").register_extension {
                             require("telescope.previewers.utils").highlighter(self.state.bufnr, ft)
                         end,
                     },
-
                     attach_mappings = function(buffer)
                         vim.schedule(function()
                             vim.api.nvim_create_autocmd("TextChangedI", {
