@@ -5,4 +5,5 @@ return {
     "rose-pine/neovim",
     "rebelot/kanagawa.nvim",
     "Biscuit-Theme/nvim",
+    "ahmadinne/bliss.nvim",
 }
