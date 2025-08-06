@@ -65,8 +65,6 @@ vim.keymap.set("n", "<leader>dq", quit_dap, { desc = "Quit dap" })
 vim.keymap.set("n", "<leader>te", "<cmd>ToggleTerm<CR>", { desc = "Open terminal" })
 vim.keymap.set("t", "<C-esc>", "<C-\\><C-N>", { desc = "Exit toggleterm" })
 
-vim.keymap.set("n", "i", "a")
-
 -- Technically not mappings but eh
 vim.api.nvim_create_user_command("Sw", "SudaWrite", {})
 vim.api.nvim_create_user_command("Sr", "SudaRead", {})
