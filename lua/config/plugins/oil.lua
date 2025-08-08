@@ -1,5 +1,6 @@
 return {
     "stevearc/oil.nvim",
+    cmd = "Oil",
     dependencies = { "echasnovski/mini.icons", "refractalize/oil-git-status.nvim", "JezerM/oil-lsp-diagnostics.nvim" },
     lazy = false,
     config = function()
