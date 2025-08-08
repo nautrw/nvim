@@ -5,7 +5,8 @@ return {
         local lualine = require "lualine"
 
         local mode = "mode"
-        local filetype = { "filetype", icon_only = true }
+        local location = "location"
+        local filetype = { "filetype", icon_only = false }
         local diagnostics = {
             "diagnostics",
             sources = { "nvim_diagnostic" },
@@ -47,7 +48,7 @@ return {
                 lualine_a = { mode },
                 lualine_b = { filename },
                 lualine_c = { diff, diagnostics },
-                lualine_x = { filetype },
+                lualine_x = { location, filetype },
                 lualine_y = {},
                 lualine_z = {},
             },
