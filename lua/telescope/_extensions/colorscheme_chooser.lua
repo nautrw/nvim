@@ -332,6 +332,7 @@ local filtered_colors = function()
         "base16-xcode-dusk",
         "base16-zenbones",
         "base16-zenburn",
+        "base16-linux-vt",
     }
 
     local allthemes = vim.fn.getcompletion("colorscheme ", "cmdline")

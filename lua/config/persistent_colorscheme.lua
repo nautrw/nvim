@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme paradise'
+vim.cmd 'colorscheme base16-gotham'
