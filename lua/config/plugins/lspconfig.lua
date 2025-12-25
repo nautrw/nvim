@@ -1,6 +1,7 @@
 return {
     {
         "neovim/nvim-lspconfig",
+        tag = "v2.4.0",
         dependencies = {
             "saghen/blink.cmp",
             {
