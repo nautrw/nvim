@@ -1,1 +1,1 @@
-vim.cmd 'colorscheme base16-caroline'
+vim.cmd 'colorscheme terafox'

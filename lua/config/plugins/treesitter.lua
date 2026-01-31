@@ -16,5 +16,5 @@ return {
             },
         }
     end,
-    build = ":TSUpdate"
+    build = ":TSUpdate",
 }
