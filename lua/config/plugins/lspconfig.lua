@@ -1,6 +1,8 @@
 return {
     {
         "neovim/nvim-lspconfig",
+        event = { "BufReadPost", "BufNewFile" },
+        cmd = { "LspInfo", "LspInstall", "LspUninstall" },
         tag = "v2.4.0",
         dependencies = {
             "saghen/blink.cmp",
@@ -17,7 +19,7 @@ return {
             local capabilities = require("blink.cmp").get_lsp_capabilities()
             local lspconfig = require "lspconfig"
 
-            local servers = { "lua_ls" }
+            local servers = { "lua_ls", "ts_ls" }
 
             for _, lsp in ipairs(servers) do
                 lspconfig[lsp].setup {
