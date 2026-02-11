@@ -39,7 +39,7 @@ vim.keymap.set("n", "<leader>c", ":nohl<CR>", { desc = "Clear search highlights"
 
 vim.keymap.set("i", "<C-BS>", "<C-o>db", { desc = "Ctrl+Backspace" })
 
-vim.keymap.set("n", "<Leader>th", "<cmd>Telescope colorscheme_chooser<CR>", { desc = "Open theme selector" })
+vim.keymap.set("n", "<Leader>th", "<cmd>Huez<CR>", { desc = "Open theme selector" })
 vim.keymap.set("n", "<Leader>ff", function()
     fff.find_files()
 end, { desc = "Find files using FFF" })

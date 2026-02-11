@@ -1,5 +1,6 @@
 return {
     "nvim-telescope/telescope.nvim",
+    cmd = "Telescope",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
         local telescope = require "telescope"
@@ -9,7 +10,5 @@ return {
                 prompt_prefix = "󰘧 ",
             },
         }
-
-        telescope.load_extension "colorscheme_chooser"
     end,
 }

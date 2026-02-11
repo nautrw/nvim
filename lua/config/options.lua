@@ -8,7 +8,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
-vim.opt.number = true
+vim.opt.relativenumber = true
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -27,3 +27,5 @@ vim.opt.whichwrap:append "<>[]hl"
 vim.opt.mouse = "a"
 
 vim.opt.signcolumn = "auto"
+
+vim.opt.cursorline = true

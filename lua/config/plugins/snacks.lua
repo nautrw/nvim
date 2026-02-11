@@ -8,6 +8,7 @@ return {
     "folke/snacks.nvim",
     lazy = false,
     opts = {
+        statuscolumn = { enable = false },
         bigfile = {
             enable = true,
             notify = true,
@@ -70,7 +71,7 @@ return {
                         icon = " ",
                         key = "t",
                         desc = "Theme Chooser",
-                        action = ":Telescope colorscheme_chooser",
+                        action = ":Huez",
                     },
                     {
                         icon = "󰒲 ",

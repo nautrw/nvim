@@ -1,9 +1,14 @@
 return {
     {
         "williamboman/mason-lspconfig.nvim",
+        event = { "BufReadPre", "BufNewFile" },
+        dependencies = {
+            "williamboman/mason.nvim",
+        },
     },
     {
         "williamboman/mason.nvim",
+        cmd = "Mason",
         dependencies = {
             "jay-babu/mason-nvim-dap.nvim",
             "WhoIsSethDaniel/mason-tool-installer.nvim",
@@ -27,6 +32,9 @@ return {
                     "debugpy",
                     "lua-language-server",
                     "stylua",
+                    "xmlformatter",
+                    "typescript-language-server",
+                    "prettier",
                 },
             }
 
