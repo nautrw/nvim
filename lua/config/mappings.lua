@@ -37,7 +37,7 @@ vim.keymap.set("n", "<Leader>e", "<cmd>Oil<CR>", { desc = "Open Oil file manager
 
 vim.keymap.set("n", "<leader>c", ":nohl<CR>", { desc = "Clear search highlights" })
 
-vim.keymap.set("i", "<C-BS>", "<C-o>db", { desc = "Ctrl+Backspace" })
+vim.keymap.set("i", "<C-BS>", "<C-w>", { desc = "Ctrl+Backspace" })
 
 vim.keymap.set("n", "<Leader>th", "<cmd>Huez<CR>", { desc = "Open theme selector" })
 vim.keymap.set("n", "<Leader>ff", function()
