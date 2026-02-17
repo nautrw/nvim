@@ -1,3 +1,12 @@
+local whichkey = require("which-key")
+
+whichkey.add {
+    { "<leader>s", desc = "Split management" },
+    { "<leader>t", desc = "Themes" },
+    { "<leader>f", desc = "Find" },
+    { "<leader>d", desc = "Debugging & LSP" },
+}
+
 vim.keymap.set("i", "<A-h>", "<Left>", { desc = "Move cursor left" })
 vim.keymap.set("i", "<A-l>", "<Right>", { desc = "Move cursor right" })
 vim.keymap.set("i", "<A-j>", "<Down>", { desc = "Move cursor down" })
@@ -21,3 +30,18 @@ vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>", { desc = "Clear search highlig
 vim.keymap.set("i", "<C-BS>", "<C-w>", { desc = "Ctrl+Backspace" })
 
 vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = "Open Oil" })
+
+vim.keymap.set("n", "<leader>ff", "<cmd>lua Snacks.picker('files')<CR>", { desc = "File picker" })
+vim.keymap.set("n", "<leader>fe", "<cmd>lua Snacks.picker()<CR>", { desc = "Every snacks picker" })
+vim.keymap.set("n", "<leader>fu", "<cmd>lua Snacks.picker('undo')<CR>", { desc = "Undo history picker" })
+vim.keymap.set("n", "<leader>fg", "<cmd>lua Snacks.picker('grep')<CR>", { desc = "Find text" })
+vim.keymap.set("n", "<leader>fr", "<cmd>lua Snacks.picker('recent')<CR>", { desc = "Pick recent files" })
+vim.keymap.set("n", "<leader>fc", "<cmd>lua Snacks.picker('files', {cwd = vim.fn.stdpath('config')})<CR>", { desc = "Pick files in Neovim Configuration" })
+
+vim.keymap.set("n", "<leader>th", function()
+  require("config.colorscheme_picker").colorscheme_chooser()
+end, { desc = "Choose colorscheme" })
+
+vim.keymap.set("n", "<leader>df", vim.diagnostic.open_float, { desc = "Show diagnostics in a float" })
+vim.keymap.set("n", "<leader>iht", "<CMD>InlayHintsToggle<CR>", {desc = "Toggle inlay hints"})
+vim.keymap.set("n", "<leader>dc", vim.lsp.buf.hover, { desc = "View documentation on hover" })

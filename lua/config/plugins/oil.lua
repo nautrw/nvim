@@ -1,7 +1,7 @@
 return {
     "stevearc/oil.nvim",
     cmd = "Oil",
-    dependencies = { "nvim-mini/mini.icons", "refractalize/oil-git-status.nvim", "JezerM/oil-lsp-diagnostics.nvim" },
+    dependencies = { "refractalize/oil-git-status.nvim", "JezerM/oil-lsp-diagnostics.nvim" },
     lazy = false,
     config = function()
         require("oil").setup {
