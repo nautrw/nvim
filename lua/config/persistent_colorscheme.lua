@@ -1,1 +1,1 @@
-vim.cmd.colorscheme('base16-ashes')
+vim.cmd.colorscheme('base16-ayu-mirage')

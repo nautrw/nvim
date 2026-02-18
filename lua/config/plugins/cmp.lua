@@ -2,7 +2,7 @@ return {
     "saghen/blink.cmp",
     event = "InsertEnter",
     version = "1.*",
-    build = "cargo +nightly-2025-09-30 build --release",
+    build = "cargo build --release",
     dependencies = { "rafamadriz/friendly-snippets" },
     opts = {
         keymap = {
