@@ -1,1 +1,1 @@
-vim.cmd.colorscheme('base16-0x96f')
+vim.cmd.colorscheme('base16-ashes')

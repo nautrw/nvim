@@ -22,6 +22,8 @@ return {
 
         local diff = {
             "diff",
+            separator = "│",
+            symbols = { added = " ", modified = " ", removed = " " },
             source = function()
                 local gitsigns = vim.b.gitsigns_status_dict
                 if gitsigns then
@@ -46,10 +48,10 @@ return {
             },
             sections = {
                 lualine_a = { mode },
-                lualine_b = { filename },
+                lualine_b = { { "branch", separator = "│" }, filename },
                 lualine_c = { diff, diagnostics },
                 lualine_x = { filetype },
-                lualine_y = {},
+                lualine_y = { "location" },
                 lualine_z = {},
             },
         }

@@ -1,6 +1,5 @@
 vim.loader.enable()
 
-require("config.options")
-require("config.lazy")
-require("config.keymaps")
-require("config.persistent_colorscheme")
+require "config.options"
+require "config.lazy"
+require "config.keymaps"

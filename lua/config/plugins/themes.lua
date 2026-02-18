@@ -1,8 +1,7 @@
 return {
     {
         "RRethy/base16-nvim",
-        lazy = true,
-        priority = 1000,
+        lazy = false,
         config = function()
             require("base16-colorscheme").with_config {
                 telescope = true,
@@ -14,34 +13,7 @@ return {
         end,
     },
     {
-        "aikhe/fleur.nvim",
-        lazy = true,
-        priority = 1000,
-    },
-    {
-        "ATTron/bebop.nvim",
-        lazy = true,
-        priority = 1000,
-    },
-    {
         "atelierbram/Base2Tone-nvim",
-        lazy = true,
-        priority = 1000,
-    },
-    {
-        "wnkz/monoglow.nvim",
-        lazy = true,
-        priority = 1000,
-        opts = {},
-    },
-    {
-        "stevedylandev/darkmatter-nvim",
-        lazy = true,
-        priority = 1000,
-    },
-    {
-        "vague-theme/vague.nvim",
-        lazy = true,
-        priority = 1000,
+        lazy = false,
     },
 }

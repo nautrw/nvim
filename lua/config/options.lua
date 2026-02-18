@@ -18,8 +18,7 @@ vim.opt.whichwrap:append "<>[]hl" -- Lets h and l move to previous or next line
 vim.opt.undofile = true
 vim.opt.swapfile = false
 
--- vim.opt.relativenumber = true -- Necessary for statuscol
-vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.signcolumn = "auto"
 
 vim.opt.cursorline = true

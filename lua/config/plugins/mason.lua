@@ -12,9 +12,10 @@ return {
         cmd = "Mason",
         dependencies = {
             "WhoIsSethDaniel/mason-tool-installer.nvim",
+            "jay-babu/mason-nvim-dap.nvim",
         },
         config = function()
-            require("mason").setup({
+            require("mason").setup {
                 ui = {
                     icons = {
                         package_installed = "",
@@ -22,9 +23,9 @@ return {
                         package_uninstalled = "",
                     },
                 },
-            })
+            }
 
-            require("mason-tool-installer").setup({
+            require("mason-tool-installer").setup {
                 ensure_installed = {
                     "basedpyright",
                     "black",
@@ -36,7 +37,17 @@ return {
                     "typescript-language-server",
                     "prettier",
                 },
-            })
+            }
+
+            require("mason-nvim-dap").setup {
+                ensure_installed = { "python" },
+                automatic_installation = true,
+                handlers = {
+                    function(config)
+                        require("mason-nvim-dap").default_setup(config)
+                    end,
+                },
+            }
 
             require("mason-lspconfig").setup()
 
@@ -49,7 +60,7 @@ return {
                         workspace = {
                             library = vim.api.nvim_get_runtime_file("", true),
                         },
-                        hint = { enable = true }
+                        hint = { enable = true },
                     },
                 },
             })
@@ -66,16 +77,16 @@ return {
                                 genericTypes = true,
                                 variableTypes = true,
                                 functionReturnTypes = true,
-                            }
+                            },
                         },
                         python = {
                             venvPath = "./.venv",
                         },
                     },
-                }
+                },
             })
 
-            vim.diagnostic.config({
+            vim.diagnostic.config {
                 virtual_text = false,
                 underline = true,
                 update_in_insert = true,
@@ -83,13 +94,12 @@ return {
                     active = true,
                     text = {
                         [vim.diagnostic.severity.ERROR] = "",
-                        [vim.diagnostic.severity.WARN]  = "",
-                        [vim.diagnostic.severity.HINT]  = "󰟃",
-                        [vim.diagnostic.severity.INFO]  = "",
+                        [vim.diagnostic.severity.WARN] = "",
+                        [vim.diagnostic.severity.HINT] = "󰟃",
+                        [vim.diagnostic.severity.INFO] = "",
                     },
                 },
-            })
+            }
         end,
     },
 }
-

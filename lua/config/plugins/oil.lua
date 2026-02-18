@@ -140,10 +140,10 @@ return {
                 index = {
                     ["!"] = "", -- Ignored
                     ["?"] = "", -- Untracked
-                    ["A"] = "", -- Added
+                    ["A"] = "", -- Added
                     ["C"] = "󰆏", -- Copied
                     ["D"] = "", -- Deleted
-                    ["M"] = "󰏫", -- Modified
+                    ["M"] = "", -- Modified
                     ["R"] = "󱅄", -- Renamed
                     ["T"] = "󱆟", -- Type Changed
                     ["U"] = "", -- Unmerged
