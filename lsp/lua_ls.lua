@@ -1,4 +1,4 @@
-vim.lsp.config("lua-language-server", {
+return {
     settings = {
         Lua = {
             runtime = {
@@ -10,6 +10,4 @@ vim.lsp.config("lua-language-server", {
             hint = { enable = true },
         },
     },
-})
-
-vim.lsp.enable("lua-language-server")
+}
