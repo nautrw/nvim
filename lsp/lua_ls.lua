@@ -1,13 +1,33 @@
 return {
+    cmd = { "lua-language-server" },
+    root_markers = {
+		"lazy-lock.json",
+		".luarc.json",
+		".luarc.jsonc",
+		".luacheckrc",
+		".stylua.toml",
+		"stylua.toml",
+		"selene.toml",
+		"selene.yml",
+		".git",
+		"default.nix",
+	},
     settings = {
-        Lua = {
-            runtime = {
-                version = "LuaJIT",
+        basedpyright = {
+            analysis = {
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                typeCheckingMode = "standard",
+                inlayHints = {
+                    callArgumentNames = true,
+                    genericTypes = true,
+                    variableTypes = true,
+                    functionReturnTypes = true,
+                },
             },
-            workspace = {
-                library = vim.api.nvim_get_runtime_file("", true),
+            python = {
+                venvPath = "./.venv",
             },
-            hint = { enable = true },
         },
     },
 }

@@ -1,4 +1,5 @@
 return {
+    cmd = "basedpyright",
     settings = {
         basedpyright = {
             analysis = {
