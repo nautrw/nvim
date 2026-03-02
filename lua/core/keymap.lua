@@ -24,17 +24,12 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Focus window to the right' })
 vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Focus window to the down' })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Focus window to the up' })
 
-vim.keymap.set("n", "<leader>ff", "<cmd>lua Snacks.picker('files')<CR>", { desc = "File picker" })
-vim.keymap.set("n", "<leader>fe", "<cmd>lua Snacks.picker()<CR>", { desc = "Every snacks picker" })
-vim.keymap.set("n", "<leader>fu", "<cmd>lua Snacks.picker('undo')<CR>", { desc = "Undo history picker" })
-vim.keymap.set("n", "<leader>fg", "<cmd>lua Snacks.picker('grep')<CR>", { desc = "Find text" })
-vim.keymap.set("n", "<leader>fr", "<cmd>lua Snacks.picker('recent')<CR>", { desc = "Pick recent files" })
-vim.keymap.set(
-    "n",
-    "<leader>fc",
-    "<cmd>lua Snacks.picker('files', {cwd = vim.fn.stdpath('config')})<CR>",
-    { desc = "Pick files in Neovim Configuration" }
-)
+vim.keymap.set('n', '<leader>ff', "<cmd>lua Snacks.picker('files')<CR>", { desc = 'File picker' })
+vim.keymap.set('n', '<leader>fe', '<cmd>lua Snacks.picker()<CR>', { desc = 'Every snacks picker' })
+vim.keymap.set('n', '<leader>fu', "<cmd>lua Snacks.picker('undo')<CR>", { desc = 'Undo history picker' })
+vim.keymap.set('n', '<leader>fg', "<cmd>lua Snacks.picker('grep')<CR>", { desc = 'Find text' })
+vim.keymap.set('n', '<leader>fr', "<cmd>lua Snacks.picker('recent')<CR>", { desc = 'Pick recent files' })
+vim.keymap.set('n', '<leader>fc', "<cmd>lua Snacks.picker('files', {cwd = vim.fn.stdpath('config')})<CR>", { desc = 'Pick files in Neovim Configuration' })
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohl<CR>', { desc = 'Clear search highlights' })
 
@@ -45,4 +40,6 @@ vim.keymap.set('n', '<leader>dq', vim.diagnostic.setloclist, { desc = 'Open diag
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
-vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = "Open Oil file manager" })
+vim.keymap.set('n', '<leader>e', '<cmd>Oil<CR>', { desc = 'Open Oil file manager' })
+
+vim.keymap.set('n', '<leader>th', "<cmd>lua require('utils.colorscheme_picker').picker()<CR>", { desc = 'Show colorscheme picker' })
