@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("lytmode")
+vim.cmd.colorscheme("koda")

@@ -38,6 +38,9 @@ return {
         '.git',
         'default.nix',
       },
+    })
+
+    vim.lsp.config('basedpyright', {
       settings = {
         basedpyright = {
           analysis = {

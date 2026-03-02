@@ -6,6 +6,11 @@ vim.o.signcolumn = 'auto'
 
 vim.o.mouse = 'a'
 
+vim.o.expandtab = true
+vim.o.smartindent = true
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+
 -- Don't show mode in gutter
 vim.o.showmode = false
 
@@ -50,3 +55,7 @@ vim.o.winborder = 'rounded'
 
 -- Keep an amount of lines above and below the cursor
 vim.o.scrolloff = 10
+
+vim.opt.whichwrap:append '<>[]hl'
+
+vim.opt.laststatus = 3

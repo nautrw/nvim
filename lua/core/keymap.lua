@@ -37,6 +37,8 @@ vim.keymap.set('i', '<C-BS>', '<C-w>', { desc = 'Ctrl+Backspace' })
 
 vim.keymap.set('n', '<leader>df', vim.diagnostic.open_float, { desc = 'Show diagnostics in a float' })
 vim.keymap.set('n', '<leader>dq', vim.diagnostic.setloclist, { desc = 'Open diagnostic quickfix list' })
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'View documentation of a symbol' })
+vim.keymap.set('n', '<leader>dh', function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { 0 }, { 0 }) end, { desc = 'Toggle inlay hints' })
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
