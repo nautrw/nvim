@@ -1,3 +1,7 @@
 return {
+  -- mini includes a bunch of colorschemes
   { 'oskarnurm/koda.nvim', lazy = false, priority = 1000 },
+  { 'nautrw/base16-unthemed-nvim', lazy = false, priority = 1000 },
+  { 'alexfertel/kintsugi.nvim', priority = 1000, lazy = false },
+  { 'projekt0n/github-nvim-theme', name = 'github-theme', lazy = false, priority = 1000 },
 }

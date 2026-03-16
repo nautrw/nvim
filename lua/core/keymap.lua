@@ -45,3 +45,5 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set('n', '<leader>e', '<cmd>Oil<CR>', { desc = 'Open Oil file manager' })
 
 vim.keymap.set('n', '<leader>th', "<cmd>lua require('utils.colorscheme_picker').picker()<CR>", { desc = 'Show colorscheme picker' })
+
+vim.keymap.set('n', '<leader>ct', '<cmd>ColorizerToggle<CR>', { desc = 'Toggle colorizer' })
