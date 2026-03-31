@@ -1,17 +1,5 @@
 return {
-  'saghen/blink.pairs',
+  'windwp/nvim-autopairs',
   event = 'InsertEnter',
-  version = '*',
-  dependencies = 'saghen/blink.download',
-  opts = {
-    mappings = {
-      enabled = true,
-      cmdline = true,
-      disabled_filetypes = {},
-    },
-    highlights = {
-      enabled = false,
-    },
-    debug = false,
-  },
+  config = function() require('nvim-autopairs').setup {} end,
 }

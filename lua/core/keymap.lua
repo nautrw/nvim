@@ -45,5 +45,10 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set('n', '<leader>e', '<cmd>Oil<CR>', { desc = 'Open Oil file manager' })
 
 vim.keymap.set('n', '<leader>th', "<cmd>lua require('utils.colorscheme_picker').picker()<CR>", { desc = 'Show colorscheme picker' })
+vim.keymap.set('n', '<leader>p', "<cmd>lua require('utils.command_palette').picker()<CR>", { desc = 'Show colorscheme picker' })
 
 vim.keymap.set('n', '<leader>ct', '<cmd>ColorizerToggle<CR>', { desc = 'Toggle colorizer' })
+
+vim.keymap.set('n', '<leader>rr', '<cmd>mksession! /tmp/Session.vim | restart source /tmp/Session.vim<CR>', { desc = 'Restart neovim in place' })
+
+vim.keymap.set('n', '<leader>vv', '<cmd>w<CR>', { desc = 'Alternate :w' })

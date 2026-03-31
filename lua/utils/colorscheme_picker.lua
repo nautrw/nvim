@@ -5,6 +5,12 @@ local M = {}
 function M.get_filtered_colorschemes()
   local unfiltered_list = vim.fn.getcompletion('', 'color')
   local filter = {
+    'darcula-solid',
+    'dracula',
+    'monokai-pro-light',
+    'noctis_hibernus',
+    'noctis_lux',
+    'noctis_lilac',
     'desert',
     'evening',
     'industry',
@@ -80,7 +86,7 @@ function M.picker()
   Snacks.picker {
     title = 'Colorscheme picker',
     layout = {
-      preset = 'vscode',
+      preset = 'right',
       preview = false,
     },
     items = items,
@@ -98,7 +104,7 @@ function M.picker()
 
       picker:close()
     end,
-    on_change = function(picker, item)
+    on_change = function(_, item)
       vim.schedule(function() vim.cmd.colorscheme(item.text) end)
     end,
   }
