@@ -52,3 +52,18 @@ vim.keymap.set('n', '<leader>ct', '<cmd>ColorizerToggle<CR>', { desc = 'Toggle c
 vim.keymap.set('n', '<leader>rr', '<cmd>mksession! /tmp/Session.vim | restart source /tmp/Session.vim<CR>', { desc = 'Restart neovim in place' })
 
 vim.keymap.set('n', '<leader>vv', '<cmd>w<CR>', { desc = 'Alternate :w' })
+
+Dap = require 'dap'
+vim.keymap.set('n', '<leader>dt', Dap.toggle_breakpoint, { desc = 'Toggle breakpoint' })
+vim.keymap.set('n', '<leader>dc', Dap.continue, { desc = '(Dap) Continue' })
+vim.keymap.set('n', '<leader>di', Dap.step_into, { desc = '(Dap) Step into' })
+vim.keymap.set('n', '<leader>do', Dap.step_over, { desc = '(Dap) Step over' })
+vim.keymap.set('n', '<leader>du', Dap.step_out, { desc = '(Dap) Step out' })
+vim.keymap.set('n', '<leader>dr', Dap.repl.open, { desc = 'Open dap REPL' })
+vim.keymap.set('n', '<leader>dl', Dap.run_last, { desc = 'Run Last' })
+vim.keymap.set('n', '<leader>dq', function()
+  Dap.terminate()
+  require('dapui').close()
+  require('nvim-dap-virtual-text').toggle()
+end, { desc = 'Terminate Dap' })
+vim.keymap.set('n', '<leader>db', function() Dap.list_breakpoints() end, { desc = 'List dap breakpoints' })

@@ -54,7 +54,7 @@ return {
     },
     picker = {
       enable = true,
-      prompt = '󰘧 ',
+      prompt = ' 󰘧 ',
     },
     indent = {
       enable = false,

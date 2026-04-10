@@ -4,19 +4,19 @@ local M = {}
 
 local commands = {
   {
-    text = 'Pick colorschemes',
+    text = 'Pick colorschemes (<leader>th)',
     action = "lua require('utils.colorscheme_picker').picker()",
   },
   {
-    text = 'Restart Neovim',
+    text = 'Restart Neovim (<leader>rr)',
     action = 'mksession! /tmp/Session.vim | restart source /tmp/Session.vim',
   },
   {
-    text = 'Open diagnostic quickfixes',
-    action = 'lua vim.diagnostic.setloclist()',
+    text = 'Toggle Colorizer (<leader>ct)',
+    action = 'ColorizerToggle',
   },
   {
-    text = 'Toggle inlay hints',
+    text = 'Toggle inlay hints (<leader>dh)',
     action = 'lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled {0}, {0})',
   },
 }
@@ -46,7 +46,10 @@ function M.picker()
       }
     end,
     confirm = function(picker, item)
-      vim.cmd(item.action)
+      vim.schedule(function()
+        print('Running `:' .. item.action .. '`')
+        vim.cmd(item.action)
+      end)
       picker:close()
     end,
   }

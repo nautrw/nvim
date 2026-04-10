@@ -7,7 +7,5 @@ return {
   { 'loctvl842/monokai-pro.nvim', lazy = false, priority = 1000 },
   { 'xiantang/darcula-dark.nvim', lazy = false, priority = 1000 },
   { 'talha-akram/noctis.nvim', lazy = false, priority = 1000 },
-  { 'vague-theme/vague.nvim', lazy = false, priority = 1000 },
   { 'OldJobobo/biscuit-nvim', lazy = false, priority = 1000 },
-  { 'uhs-robert/oasis.nvim', lazy = false, priority = 1000 },
 }
