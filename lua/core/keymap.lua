@@ -67,3 +67,5 @@ vim.keymap.set('n', '<leader>dq', function()
   require('nvim-dap-virtual-text').toggle()
 end, { desc = 'Terminate Dap' })
 vim.keymap.set('n', '<leader>db', function() Dap.list_breakpoints() end, { desc = 'List dap breakpoints' })
+
+vim.keymap.set('n', '<leader>fm', function() require('conform').format { async = true, lsp_format = 'fallback' } end, { desc = 'Format buffer' })

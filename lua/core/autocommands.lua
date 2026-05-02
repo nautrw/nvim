@@ -31,7 +31,7 @@ vim.api.nvim_create_autocmd('BufRead', {
   callback = function() vim.bo.filetype = 'dosini' end,
 })
 
--- HIghlight when static cursor
+-- Highlight when static cursor
 vim.api.nvim_create_autocmd('CursorMoved', {
   group = vim.api.nvim_create_augroup('LspReferenceHighlight', { clear = true }),
   desc = 'Highlight references under cursor',
