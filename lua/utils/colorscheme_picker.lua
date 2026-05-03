@@ -17,6 +17,9 @@ function M.get_filtered_colorschemes()
   end
 
   local filter = {
+    'teide-light',
+    'ember-light',
+    'ember-auto',
     'darcula-solid',
     'dracula',
     'monokai-pro-light',
@@ -73,6 +76,8 @@ function M.get_filtered_colorschemes()
     'github_light_tritanopia',
     'github_light',
     'themes',
+    'flexoki-light',
+    'flexoki',
   }
 
   local filtered_list = {}

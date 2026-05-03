@@ -2,6 +2,18 @@ return {
   'folke/snacks.nvim',
   priority = 1000,
   lazy = false,
+  keys = {
+    { '<leader>ff', function() Snacks.picker 'files' end, desc = 'File picker' },
+    { '<leader>fe', function() Snacks.picker() end, desc = 'Every snacks picker' },
+    { '<leader>fu', function() Snacks.picker 'undo' end, desc = 'Undo history picker' },
+    { '<leader>fg', function() Snacks.picker 'grep' end, desc = 'Find text' },
+    { '<leader>fr', function() Snacks.picker 'recent' end, desc = 'Pick recent files' },
+    {
+      '<leader>fc',
+      function() Snacks.picker('files', { cwd = vim.fn.stdpath 'config' }) end,
+      desc = 'Pick files in Neovim Configuration',
+    },
+  },
   opts = {
     dashboard = {
       enabled = true,

@@ -1,7 +1,31 @@
 return {
   {
     'mfussenegger/nvim-dap',
-    event = 'VeryLazy',
+    lazy = true,
+    -- event = 'VeryLazy',
+    keys = {
+      { '<leader>dt', function() require('dap').toggle_breakpoint() end, desc = 'Toggle breakpoint' },
+      { '<leader>dc', function() require('dap').continue() end, desc = '(Dap) Continue' },
+      { '<leader>di', function() require('dap').step_into() end, desc = '(Dap) Step into' },
+      { '<leader>do', function() require('dap').step_over() end, desc = '(Dap) Step over' },
+      { '<leader>du', function() require('dap').step_out() end, desc = '(Dap) Step out' },
+      { '<leader>dr', function() require('dap').repl.open() end, desc = 'Open dap REPL' },
+      { '<leader>dl', function() require('dap').run_last() end, desc = 'Run Last' },
+      {
+        '<leader>dq',
+        function()
+          require('dap').terminate()
+          require('dapui').close()
+          require('nvim-dap-virtual-text').toggle()
+        end,
+        desc = 'Terminate Dap',
+      },
+      {
+        '<leader>db',
+        function() require('dap').list_breakpoints() end,
+        desc = 'List dap breakpoints',
+      },
+    },
     dependencies = {
       'rcarriga/nvim-dap-ui',
       'nvim-neotest/nvim-nio',
@@ -39,7 +63,7 @@ return {
     'jay-babu/mason-nvim-dap.nvim',
     opts = {
       handlers = {
-        python = function(source_name)
+        python = function(_)
           local dap = require 'dap'
 
           dap.adapters.python = {

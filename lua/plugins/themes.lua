@@ -1,10 +1,23 @@
 return {
   -- mini includes a bunch of colorschemes
-  'oskarnurm/koda.nvim',
+  -- They are lazy-loaded, and only loaded on `:colorscheme`,
+  -- The colorscheme picker does some magic to be able to see all colorschemes without loading
   'nautrw/base16-unthemed-nvim',
   'alexfertel/kintsugi.nvim',
   'xiantang/darcula-dark.nvim',
   'luisiacc/gruvbox-baby',
   'nyoom-engineering/oxocarbon.nvim',
   'datsfilipe/vesper.nvim',
+  'github-main-user/lytmode.nvim',
+  'kuri-sun/yoda.nvim',
+  'serhez/teide.nvim',
+  { 'ember-theme/nvim', name = 'ember' },
+  'shaunsingh/nord.nvim',
+  'rockerBOO/boo-colorscheme-nvim',
+  'water-sucks/darkrose.nvim',
+  'AlexvZyl/nordic.nvim',
+  'kvrohit/rasmus.nvim',
+  'olivercederborg/poimandres.nvim',
+  'Mofiqul/vscode.nvim',
+  '0xleodevv/oc-2.nvim',
 }
