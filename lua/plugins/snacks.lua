@@ -6,7 +6,7 @@ return {
     dashboard = {
       enabled = true,
       preset = {
-        header = 'Ne Plus Ultra  Nothing Further Beyond',
+        header = 'Plus Ultra',
         keys = {
           { icon = ' ', key = 'f', desc = 'Find File', action = ":lua Snacks.dashboard.pick('files')" },
           { icon = '󰏇 ', key = 'e', desc = 'Open Oil', action = ':Oil' },

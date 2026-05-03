@@ -19,6 +19,18 @@ local commands = {
     text = 'Toggle inlay hints (<leader>dh)',
     action = 'lua vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled {0}, {0})',
   },
+  {
+    text = 'Open WhichKey (:WhichKey)',
+    action = 'WhichKey',
+  },
+  {
+    text = 'Open Mason (:Mason)',
+    action = 'Mason',
+  },
+  {
+    text = 'Open Lazy (:Lazy)',
+    action = 'Lazy',
+  },
 }
 
 function M.picker()

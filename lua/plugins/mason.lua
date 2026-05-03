@@ -6,7 +6,6 @@ return {
       'WhoIsSethDaniel/mason-tool-installer.nvim',
       opts = {
         ensure_installed = {
-          'basedpyright',
           'black',
           'isort',
           'debugpy',
