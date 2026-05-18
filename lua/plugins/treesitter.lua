@@ -1,9 +1,10 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   lazy = true,
-  event = 'BufRead',
+  event = { "BufReadPost", "BufNewFile" },
+  cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
   branch = 'main',
-  build = ':TSUpdate',
+  build = ':TSUpdate | TSInstallAll',
   config = function()
     local parsers = {
       'astro',

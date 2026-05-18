@@ -20,7 +20,7 @@ return {
       preset = {
         header = 'Plus Ultra',
         keys = {
-          { icon = ' ', key = 'f', desc = 'Find File', action = ":lua Snacks.dashboard.pick('files')" },
+          { icon = ' ', key = 'f', desc = 'Find File in working directory', action = ":lua Snacks.dashboard.pick('files')" },
           { icon = '󰏇 ', key = 'e', desc = 'Open Oil', action = ':Oil' },
           {
             icon = ' ',
@@ -49,16 +49,21 @@ return {
           {
             icon = '󰒲 ',
             key = 'L',
-            desc = 'Lazy',
+            desc = 'Lazy.nvim',
             action = ':Lazy',
-            enabled = package.loaded.lazy ~= nil,
+          },
+          {
+            icon = "",
+            key = "m",
+            desc = "Mason",
+            action = ":Mason",
           },
           { icon = ' ', key = 'q', desc = 'Quit', action = ':qa' },
         },
       },
       sections = {
         { section = 'header' },
-        { icon = ' ', title = 'Keymaps', section = 'keys', indent = 2, padding = 1 },
+        { icon = ' ', title = 'Quick Actions', section = 'keys', indent = 2, padding = 1 },
         { icon = ' ', title = 'Recent Files', section = 'recent_files', indent = 2, padding = 1 },
         { icon = ' ', title = 'Projects', section = 'projects', indent = 2, padding = 1 },
         { section = 'startup' },
@@ -69,14 +74,7 @@ return {
       prompt = ' 󰘧 ',
     },
     indent = {
-      enable = false,
-      animate = {
-        enabled = false,
-      },
-      scope = {
-        enable = false,
-        only_current = false,
-      },
+      enable = true,
     },
     quickfile = {
       enable = true,

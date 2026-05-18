@@ -6,6 +6,7 @@ return {
       'WhoIsSethDaniel/mason-tool-installer.nvim',
       opts = {
         ensure_installed = {
+          'ty',
           'black',
           'isort',
           'debugpy',
@@ -14,6 +15,9 @@ return {
           'xmlformatter',
           'typescript-language-server',
           'prettier',
+          'clangd',
+          'clang-format',
+          'codelldb'
         },
       },
     },
@@ -21,9 +25,9 @@ return {
   opts = {
     ui = {
       icons = {
-        package_installed = '',
+        package_installed = '',
         package_pending = '',
-        package_uninstalled = '',
+        package_uninstalled = '',
       },
     },
   },
