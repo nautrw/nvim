@@ -14,6 +14,7 @@ return {
       'diff',
       'go',
       'gomod',
+      "make",
       'gowork',
       'gosum',
       'graphql',

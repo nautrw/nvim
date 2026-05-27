@@ -2,7 +2,7 @@ return {
   'saghen/blink.cmp',
   build = function() require('blink.cmp').build():wait(60000) end,
   event = 'InsertEnter',
-  dependencies = { 'rafamadriz/friendly-snippets', 'saghen/blink.lib' },
+  dependencies = { 'rafamadriz/friendly-snippets', 'saghen/blink.lib', 'L3MON4D3/LuaSnip' },
   opts = {
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
     -- 'super-tab' for mappings similar to vscode (tab to accept)
