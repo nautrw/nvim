@@ -1,7 +1,7 @@
 return {
   'brenoprata10/nvim-highlight-colors',
   event = 'InsertEnter',
-  cmd = { 'HighlightColors' },
+  cmd = { 'HighlightColors', 'ColorizerToggle' },
   opts = {
     render = 'virtual',
     enable_hex = true,
