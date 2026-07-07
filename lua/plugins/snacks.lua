@@ -18,7 +18,7 @@ return {
     dashboard = {
       enabled = true,
       preset = {
-        header = 'Plus Ultra',
+        header = "Plus Ultra Ad Gloriam",
         keys = {
           { icon = ' ', key = 'f', desc = 'Find File in working directory', action = ":lua Snacks.dashboard.pick('files')" },
           { icon = '󰏇 ', key = 'e', desc = 'Open Oil', action = ':Oil' },
@@ -53,10 +53,10 @@ return {
             action = ':Lazy',
           },
           {
-            icon = "",
-            key = "m",
-            desc = "Mason",
-            action = ":Mason",
+            icon = '',
+            key = 'm',
+            desc = 'Mason',
+            action = ':Mason',
           },
           { icon = ' ', key = 'q', desc = 'Quit', action = ':qa' },
         },

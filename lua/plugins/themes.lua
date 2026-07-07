@@ -17,4 +17,5 @@ return {
   'olivercederborg/poimandres.nvim',
   'Mofiqul/vscode.nvim',
   '0xleodevv/oc-2.nvim',
+  "https://github.com/github-main-user/lytmode.nvim"
 }
