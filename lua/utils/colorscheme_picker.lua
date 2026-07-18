@@ -22,7 +22,6 @@ function M.get_filtered_colorschemes()
     'ember-auto',
     'darcula-solid',
     'dracula',
-    'monokai-pro-light',
     'noctis_hibernus',
     'noctis_lux',
     'noctis_lilac',
@@ -65,19 +64,8 @@ function M.get_filtered_colorschemes()
     'minisummer',
     'minispring',
     'miniwinter',
-    'github_dark_colorblind',
-    'github_dark_high_contrast',
-    'github_dark_default',
-    'github_dark_tritanopia',
-    'github_dark',
-    'github_light_colorblind',
-    'github_light_high_contrast',
-    'github_light_default',
-    'github_light_tritanopia',
-    'github_light',
-    'themes',
-    'flexoki-light',
-    'flexoki',
+    "dayfox",
+    "dawnfox"
   }
 
   local filtered_list = {}

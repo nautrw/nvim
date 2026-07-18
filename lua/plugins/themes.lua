@@ -6,16 +6,15 @@ return {
   'alexfertel/kintsugi.nvim',
   'xiantang/darcula-dark.nvim',
   'luisiacc/gruvbox-baby',
-  'nyoom-engineering/oxocarbon.nvim',
   'github-main-user/lytmode.nvim',
   'serhez/teide.nvim',
   { 'ember-theme/nvim', name = 'ember' },
-  'shaunsingh/nord.nvim',
   'rockerBOO/boo-colorscheme-nvim',
-  'AlexvZyl/nordic.nvim',
   'kvrohit/rasmus.nvim',
   'olivercederborg/poimandres.nvim',
   'Mofiqul/vscode.nvim',
   '0xleodevv/oc-2.nvim',
-  "https://github.com/github-main-user/lytmode.nvim"
+  "github-main-user/lytmode.nvim",
+  "EdenEast/nightfox.nvim",
+  "OldJobobo/biscuit-nvim"
 }
