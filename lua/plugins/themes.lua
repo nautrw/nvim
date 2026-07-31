@@ -16,5 +16,6 @@ return {
   '0xleodevv/oc-2.nvim',
   "github-main-user/lytmode.nvim",
   "EdenEast/nightfox.nvim",
-  "OldJobobo/biscuit-nvim"
+  "OldJobobo/biscuit-nvim",
+  "Aejkatappaja/cendre"
 }
