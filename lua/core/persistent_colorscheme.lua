@@ -1,6 +1,6 @@
-if pcall(function() vim.cmd.colorscheme("cendre") end) then
+if pcall(function() vim.cmd.colorscheme("duskfox") end) then
   return
 else
   vim.cmd.colorscheme("paradise")
-  print("Failed to load colorscheme `cendre`")
+  print("Failed to load colorscheme `duskfox`")
 end
