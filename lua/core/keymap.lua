@@ -9,10 +9,26 @@ require('which-key').add {
 -- Better up (k)/down (j)
 -- ('x' mode is visual)
 -- This allows for stuff like `10j` to work normally but just pressing `j` will do `gk`
-vim.keymap.set({ 'n', 'x' }, 'j', "v:count == 0 ? 'gj' : 'j'", { desc = 'Down', expr = true, silent = true })
-vim.keymap.set({ 'n', 'x' }, '<Down>', "v:count == 0 ? 'gj' : 'j'", { desc = 'Down', expr = true, silent = true })
-vim.keymap.set({ 'n', 'x' }, 'k', "v:count == 0 ? 'gk' : 'k'", { desc = 'Up', expr = true, silent = true })
-vim.keymap.set({ 'n', 'x' }, '<Up>', "v:count == 0 ? 'gk' : 'k'", { desc = 'Up', expr = true, silent = true })
+vim.keymap.set({ 'n', 'x' }, 'j', "v:count == 0 ? 'gj' : 'j'", {
+  desc = 'Down',
+  expr = true,
+  silent = true,
+})
+vim.keymap.set({ 'n', 'x' }, '<Down>', "v:count == 0 ? 'gj' : 'j'", {
+  desc = 'Down',
+  expr = true,
+  silent = true,
+})
+vim.keymap.set({ 'n', 'x' }, 'k', "v:count == 0 ? 'gk' : 'k'", {
+  desc = 'Up',
+  expr = true,
+  silent = true,
+})
+vim.keymap.set({ 'n', 'x' }, '<Up>', "v:count == 0 ? 'gk' : 'k'", {
+  desc = 'Up',
+  expr = true,
+  silent = true,
+})
 
 vim.keymap.set('i', '<A-h>', '<Left>', { desc = 'Move cursor left' })
 vim.keymap.set('i', '<A-l>', '<Right>', { desc = 'Move cursor right' })
@@ -34,10 +50,16 @@ vim.keymap.set('n', '<leader>fe', '<cmd>lua Snacks.picker()<CR>', { desc = 'Ever
 vim.keymap.set('n', '<leader>fu', "<cmd>lua Snacks.picker('undo')<CR>", { desc = 'Undo history picker' })
 vim.keymap.set('n', '<leader>fg', "<cmd>lua Snacks.picker('grep')<CR>", { desc = 'Find text' })
 vim.keymap.set('n', '<leader>fr', "<cmd>lua Snacks.picker('recent')<CR>", { desc = 'Pick recent files' })
-vim.keymap.set('n', '<leader>fc', "<cmd>lua Snacks.picker('files', {cwd = vim.fn.stdpath('config')})<CR>", { desc = 'Find in Neovim config.' })
+vim.keymap.set('n', '<leader>fc', "<cmd>lua Snacks.picker('files', { cwd = vim.fn.stdpath('config') })<CR>", {
+  desc = 'Find in Neovim config.',
+})
 vim.keymap.set('n', '<leader>fp', '<cmd>lua Snacks.explorer()<CR>', { desc = 'Traditional file explorer' })
-vim.keymap.set('n', '<leader>fd', '<cmd>lua Snacks.picker.diagnostics_buffer()<CR>', { desc = 'Diagnostics picker' })
-vim.keymap.set('n', '<leader>fD', '<cmd>lua Snacks.picker.diagnostics()<CR>', { desc = 'Diagnostics picker (whole workspace)' })
+vim.keymap.set('n', '<leader>fd', '<cmd>lua Snacks.picker.diagnostics_buffer()<CR>', {
+  desc = 'Diagnostics picker',
+})
+vim.keymap.set('n', '<leader>fD', '<cmd>lua Snacks.picker.diagnostics()<CR>', {
+  desc = 'Diagnostics picker (whole workspace)',
+})
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohl<CR>', { desc = 'Clear search highlights' })
 
@@ -50,19 +72,29 @@ vim.keymap.set('n', '<leader>dh', function() vim.lsp.inlay_hint.enable(not vim.l
 
 vim.keymap.set('n', '<leader>e', '<cmd>Oil<CR>', { desc = 'Open Oil file manager' })
 
-vim.keymap.set('n', '<leader>th', "<cmd>lua require('utils.colorscheme_picker').picker()<CR>", { desc = 'Show colorscheme picker' })
-vim.keymap.set('n', '<leader>p', "<cmd>lua require('utils.command_palette').picker()<CR>", { desc = 'Show colorscheme picker' })
+vim.keymap.set('n', '<leader>th', "<cmd>lua require('utils.colorscheme_picker').picker()<CR>", {
+  desc = 'Show colorscheme picker',
+})
+vim.keymap.set('n', '<leader>p', "<cmd>lua require('utils.command_palette').picker()<CR>", {
+  desc = 'Show colorscheme picker',
+})
 
 vim.keymap.set('n', '<leader>tc', '<cmd>ColorizerToggle<CR>', { desc = 'Toggle colorizer' })
 
-vim.keymap.set('n', '<leader>rr', '<cmd>mksession! /tmp/Session.vim | restart source /tmp/Session.vim<CR>', { desc = 'Restart neovim in place' })
+vim.keymap.set('n', '<leader>rr', '<cmd>mksession! /tmp/Session.vim | restart source /tmp/Session.vim<CR>', {
+  desc = 'Restart neovim in place',
+})
 
 vim.keymap.set('n', '<leader>vv', '<cmd>w<CR>', { desc = 'Alternate :w' })
 
 vim.keymap.set('n', '<leader>fm', function() require('conform').format { async = true, lsp_fomat = 'fallback' } end, { desc = 'Format buffer' })
 
 local Terminal = require('toggleterm.terminal').Terminal
-local lazygit = Terminal:new { cmd = 'lazygit', direction = 'float', hidden = true }
+local lazygit = Terminal:new {
+  cmd = 'lazygit',
+  direction = 'float',
+  hidden = true,
+}
 
 vim.keymap.set('t', '<C-Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 vim.keymap.set('n', '<leader>tg', function() lazygit:toggle() end, { desc = 'Open Lazygit' })
