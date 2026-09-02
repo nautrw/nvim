@@ -1,9 +1,9 @@
-require('base16-colorscheme').setup {
+local M = {
   base00 = '#151515',
-  base01 = '#1F1F1F',
-  base02 = '#2E2E2E',
-  base03 = '#424242',
-  base04 = '#BBB6B6',
+  base01 = '#292929',
+  base02 = '#3B3B3B',
+  base03 = '#505050',
+  base04 = '#C5C0C0',
   base05 = '#E8E3E3',
   base06 = '#E8E3E3',
   base07 = '#E8E3E3',
@@ -16,3 +16,9 @@ require('base16-colorscheme').setup {
   base0E = '#A988B0',
   base0F = '#BBB6B6',
 }
+
+require('base16-colorscheme').setup(M)
+
+vim.api.nvim_set_hl(0, 'WinSeparator', {
+  fg = M.base03,
+})
