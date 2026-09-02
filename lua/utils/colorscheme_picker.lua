@@ -66,7 +66,8 @@ function M.get_filtered_colorschemes()
     'miniwinter',
     'dayfox',
     'dawnfox',
-    'ember-lighter'
+    'ember-lighter',
+    'themes',
   }
 
   local filtered_list = {}
