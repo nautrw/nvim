@@ -1,8 +1,8 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   lazy = true,
-  event = { "BufReadPost", "BufNewFile" },
-  cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
+  event = { 'BufReadPost', 'BufNewFile' },
+  cmd = { 'TSInstall', 'TSBufEnable', 'TSBufDisable', 'TSModuleInfo' },
   branch = 'main',
   build = ':TSUpdate | TSInstallAll',
   config = function()
@@ -12,7 +12,7 @@ return {
       'css',
       'diff',
       'go',
-      "make",
+      'make',
       'html',
       'javascript',
       'jsdoc',

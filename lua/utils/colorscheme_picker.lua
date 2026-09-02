@@ -64,8 +64,8 @@ function M.get_filtered_colorschemes()
     'minisummer',
     'minispring',
     'miniwinter',
-    "dayfox",
-    "dawnfox"
+    'dayfox',
+    'dawnfox',
   }
 
   local filtered_list = {}

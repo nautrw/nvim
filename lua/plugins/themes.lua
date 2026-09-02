@@ -8,6 +8,6 @@ return {
   'github-main-user/lytmode.nvim',
   { 'ember-theme/nvim', name = 'ember' },
   'Mofiqul/vscode.nvim',
-  "EdenEast/nightfox.nvim",
-  "Aejkatappaja/cendre"
+  'EdenEast/nightfox.nvim',
+  'Aejkatappaja/cendre',
 }

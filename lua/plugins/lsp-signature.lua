@@ -1,12 +1,12 @@
 return {
-  "ray-x/lsp_signature.nvim",
-  event = "InsertEnter",
+  'ray-x/lsp_signature.nvim',
+  event = 'InsertEnter',
   opts = {
     bind = true,
     handler_opts = {
-      border = "rounded",
+      border = 'rounded',
     },
     doc_lines = 0,
-    hint_enable = false
-  }
+    hint_enable = false,
+  },
 }

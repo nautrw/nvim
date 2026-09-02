@@ -5,6 +5,6 @@ return {
   config = true,
   opts = {
     direction = 'vertical',
-    size = vim.o.columns * 0.4
-  }
+    size = vim.o.columns * 0.4,
+  },
 }

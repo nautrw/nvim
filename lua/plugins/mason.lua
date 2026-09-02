@@ -17,7 +17,7 @@ return {
           'prettier',
           'clangd',
           'clang-format',
-          'codelldb'
+          'codelldb',
         },
       },
     },
