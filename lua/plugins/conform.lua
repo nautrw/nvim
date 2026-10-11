@@ -6,7 +6,6 @@ return {
     notify_on_error = true,
     formatters_by_ft = {
       lua = { 'stylua' },
-      -- python = { 'black', 'isort' },
       python = { 'ruff_format', 'ruff_organize_imports' },
       c = { 'clang-format' },
       cpp = { 'clang-format' },

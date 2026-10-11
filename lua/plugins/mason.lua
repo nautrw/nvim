@@ -7,8 +7,7 @@ return {
       opts = {
         ensure_installed = {
           'ty',
-          'black',
-          'isort',
+          'ruff',
           'debugpy',
           'lua-language-server',
           'stylua',
