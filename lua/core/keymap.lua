@@ -50,6 +50,7 @@ vim.keymap.set('n', '<leader>fe', '<cmd>lua Snacks.picker()<CR>', { desc = 'Ever
 vim.keymap.set('n', '<leader>fu', "<cmd>lua Snacks.picker('undo')<CR>", { desc = 'Undo history picker' })
 vim.keymap.set('n', '<leader>fg', "<cmd>lua Snacks.picker('grep')<CR>", { desc = 'Find text' })
 vim.keymap.set('n', '<leader>fr', "<cmd>lua Snacks.picker('recent')<CR>", { desc = 'Pick recent files' })
+vim.keymap.set('n', '<leader>fs', "<cmd>lua Snacks.picker('lsp_symbols')<CR>", { desc = 'LSP Symbol Search' })
 vim.keymap.set('n', '<leader>fc', "<cmd>lua Snacks.picker('files', { cwd = vim.fn.stdpath('config') })<CR>", {
   desc = 'Find in Neovim config.',
 })
