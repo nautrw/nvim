@@ -17,6 +17,7 @@ return {
           'clangd',
           'clang-format',
           'codelldb',
+          "shfmt"
         },
       },
     },

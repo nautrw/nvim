@@ -9,6 +9,9 @@ return {
       python = { 'ruff_format', 'ruff_organize_imports' },
       c = { 'clang-format' },
       cpp = { 'clang-format' },
+      shell = { 'shfmt' },
+      bash = { 'shfmt' },
+      zsh = { 'shfmt' }
     },
   },
 }
